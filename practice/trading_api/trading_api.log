@@ -1,0 +1,736 @@
+2026-06-07 15:55:48 | INFO | app.main | Request started | GET /docs
+2026-06-07 15:55:48 | INFO | app.main | request Completed | GET /docsstatus=200 duration=0.0010566830169409513
+2026-06-07 15:55:48 | INFO | app.main | Request started | GET /openapi.json
+2026-06-07 15:55:48 | INFO | app.main | request Completed | GET /openapi.jsonstatus=200 duration=0.004600333020789549
+2026-06-08 14:50:29 | INFO | app.main | Created all DB Tables
+2026-06-08 14:51:05 | INFO | app.main | Request started | GET /docs
+2026-06-08 14:51:05 | INFO | app.main | request Completed | GET /docsstatus=200 duration=0.0013366200000746176
+2026-06-08 14:51:05 | INFO | app.main | Request started | GET /openapi.json
+2026-06-08 14:51:05 | INFO | app.main | request Completed | GET /openapi.jsonstatus=200 duration=0.028811144999053795
+2026-06-08 14:51:42 | INFO | app.main | Request started | GET /trades/
+2026-06-08 14:51:42 | WARNING | app.auth | request missing APi key
+2026-06-08 14:51:42 | INFO | app.main | request Completed | GET /trades/status=401 duration=0.0025339040003018454
+2026-06-08 14:53:36 | INFO | app.main | Request started | GET /trades/
+2026-06-08 14:53:36 | INFO | app.main | request Completed | GET /trades/status=200 duration=0.014222205001715338
+2026-06-08 14:53:52 | INFO | app.main | Request started | GET /trades/
+2026-06-08 14:53:52 | WARNING | app.auth | Invalid API key attempt | key=wrong-....
+2026-06-08 14:53:52 | INFO | app.main | request Completed | GET /trades/status=403 duration=0.0018088910001097247
+2026-06-08 14:54:12 | INFO | app.main | Request started | GET /trades/
+2026-06-08 14:54:12 | INFO | app.main | request Completed | GET /trades/status=200 duration=0.00725735499872826
+2026-06-08 14:54:15 | INFO | app.main | Request started | GET /trades/
+2026-06-08 14:54:15 | INFO | app.main | request Completed | GET /trades/status=200 duration=0.0075191460018686485
+2026-06-08 14:54:15 | INFO | app.main | Request started | GET /trades/
+2026-06-08 14:54:15 | INFO | app.main | request Completed | GET /trades/status=200 duration=0.007893480000348063
+2026-06-08 14:54:16 | INFO | app.main | Request started | GET /trades/
+2026-06-08 14:54:16 | INFO | app.main | request Completed | GET /trades/status=200 duration=0.006806519002566347
+2026-06-08 14:54:16 | INFO | app.main | Request started | GET /trades/
+2026-06-08 14:54:16 | INFO | app.main | request Completed | GET /trades/status=200 duration=0.0056274279995705
+2026-06-08 14:54:16 | INFO | app.main | Request started | GET /trades/
+2026-06-08 14:54:16 | INFO | app.main | request Completed | GET /trades/status=200 duration=0.017375702002027538
+2026-06-08 14:54:16 | INFO | app.main | Request started | GET /trades/
+2026-06-08 14:54:16 | INFO | app.main | request Completed | GET /trades/status=200 duration=0.008098993999738013
+2026-06-08 14:54:16 | INFO | app.main | Request started | GET /trades/
+2026-06-08 14:54:16 | INFO | app.main | request Completed | GET /trades/status=200 duration=0.01601831699736067
+2026-06-08 14:54:16 | INFO | app.main | Request started | GET /trades/
+2026-06-08 14:54:16 | INFO | app.main | request Completed | GET /trades/status=429 duration=0.001028020997182466
+2026-06-08 14:54:16 | INFO | app.main | Request started | GET /trades/
+2026-06-08 14:54:16 | INFO | app.main | request Completed | GET /trades/status=429 duration=0.0011588309971557464
+2026-06-08 14:54:17 | INFO | app.main | Request started | GET /trades/
+2026-06-08 14:54:17 | INFO | app.main | request Completed | GET /trades/status=429 duration=0.003695733001222834
+2026-06-08 14:57:42 | INFO | app.main | Created all DB Tables
+2026-06-08 15:03:05 | INFO | app.main | Created all DB Tables
+2026-06-08 15:03:25 | INFO | app.main | Created all DB Tables
+2026-06-08 15:03:34 | INFO | app.main | Created all DB Tables
+2026-06-08 15:09:49 | INFO | app.main | Created all DB Tables
+2026-06-08 15:21:05 | INFO | app.main | Created all DB Tables
+2026-06-08 15:21:54 | INFO | app.main | Created all DB Tables
+2026-06-08 15:22:02 | INFO | app.main | Created all DB Tables
+2026-06-08 15:22:06 | INFO | app.main | Created all DB Tables
+2026-06-08 15:22:09 | INFO | app.main | Created all DB Tables
+2026-06-08 15:23:18 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:23:18 | INFO | app.services | Creating Trade| symbol= AAPL, qty=10, price=150.0
+2026-06-08 15:23:18 | INFO | app.repositories | Created a new trade in the DB | id=1
+2026-06-08 15:23:18 | INFO | app.services | Trade created Successfully | id=1
+2026-06-08 15:23:18 | INFO | app.main | request Completed | POST /trades/status=201 duration=0.025289469998824643
+2026-06-08 15:23:18 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:23:18 | WARNING | app.main | Validation Error | POST /trades/ | [{'type': 'value_error', 'loc': ('body', 'symbol'), 'msg': 'Value error, symbol must only contain letter', 'input': 'AAPL123', 'ctx': {'error': ValueError('symbol must only contain letter')}, 'url': 'https://errors.pydantic.dev/2.13/v/value_error'}]
+2026-06-08 15:23:18 | WARNING | app.main | Enexpected Error | /trades/ | Object of type ValueError is not JSON serializable
+2026-06-08 15:23:18 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:23:18 | WARNING | app.main | Validation Error | POST /trades/ | [{'type': 'value_error', 'loc': ('body', 'quantity'), 'msg': 'Value error, quantity must be positive', 'input': -5, 'ctx': {'error': ValueError('quantity must be positive')}, 'url': 'https://errors.pydantic.dev/2.13/v/value_error'}]
+2026-06-08 15:23:18 | WARNING | app.main | Enexpected Error | /trades/ | Object of type ValueError is not JSON serializable
+2026-06-08 15:23:18 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:23:18 | WARNING | app.main | Validation Error | POST /trades/ | [{'type': 'value_error', 'loc': ('body', 'price'), 'msg': 'Value error, price must be positive', 'input': 0, 'ctx': {'error': ValueError('price must be positive')}, 'url': 'https://errors.pydantic.dev/2.13/v/value_error'}]
+2026-06-08 15:23:18 | WARNING | app.main | Enexpected Error | /trades/ | Object of type ValueError is not JSON serializable
+2026-06-08 15:23:19 | INFO | app.main | Request started | GET /trades/
+2026-06-08 15:23:19 | INFO | app.main | request Completed | GET /trades/status=200 duration=0.011054123999201693
+2026-06-08 15:23:19 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:23:19 | INFO | app.services | Creating Trade| symbol= AAPL, qty=10, price=150.0
+2026-06-08 15:23:19 | INFO | app.repositories | Created a new trade in the DB | id=1
+2026-06-08 15:23:19 | INFO | app.services | Trade created Successfully | id=1
+2026-06-08 15:23:19 | INFO | app.main | request Completed | POST /trades/status=201 duration=0.02171825500045088
+2026-06-08 15:23:19 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:23:19 | INFO | app.services | Creating Trade| symbol= GOOG, qty=5, price=200.0
+2026-06-08 15:23:19 | INFO | app.repositories | Created a new trade in the DB | id=2
+2026-06-08 15:23:19 | INFO | app.services | Trade created Successfully | id=2
+2026-06-08 15:23:19 | INFO | app.main | request Completed | POST /trades/status=201 duration=0.0164280660028453
+2026-06-08 15:23:19 | INFO | app.main | Request started | GET /trades/
+2026-06-08 15:23:19 | INFO | app.main | request Completed | GET /trades/status=200 duration=0.0061099099984858185
+2026-06-08 15:23:19 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:23:19 | INFO | app.services | Creating Trade| symbol= AAPL, qty=10, price=150.0
+2026-06-08 15:23:19 | INFO | app.repositories | Created a new trade in the DB | id=1
+2026-06-08 15:23:19 | INFO | app.services | Trade created Successfully | id=1
+2026-06-08 15:23:19 | INFO | app.main | request Completed | POST /trades/status=201 duration=0.03402604800066911
+2026-06-08 15:23:19 | INFO | app.main | Request started | GET /trades/1
+2026-06-08 15:23:19 | INFO | app.main | request Completed | GET /trades/1status=200 duration=0.008990375001303619
+2026-06-08 15:23:19 | INFO | app.main | Request started | GET /trades/999
+2026-06-08 15:23:19 | INFO | app.main | request Completed | GET /trades/999status=429 duration=0.004707215997768799
+2026-06-08 15:23:19 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:23:19 | INFO | app.main | request Completed | POST /trades/status=429 duration=0.00426908800000092
+2026-06-08 15:23:19 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:23:19 | INFO | app.main | request Completed | POST /trades/status=429 duration=0.0023967909983184654
+2026-06-08 15:23:19 | INFO | app.main | Request started | GET /trades/
+2026-06-08 15:23:19 | INFO | app.main | request Completed | GET /trades/status=429 duration=0.0021029560011811554
+2026-06-08 15:23:19 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:23:19 | INFO | app.main | request Completed | POST /trades/status=429 duration=0.004459826999664074
+2026-06-08 15:23:19 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:23:19 | INFO | app.main | request Completed | POST /trades/status=429 duration=0.0034121399985451717
+2026-06-08 15:23:19 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:23:19 | INFO | app.main | request Completed | POST /trades/status=429 duration=0.0034632819988473784
+2026-06-08 15:23:19 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:23:19 | INFO | app.main | request Completed | POST /trades/status=429 duration=0.002588294999441132
+2026-06-08 15:23:19 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:23:19 | INFO | app.main | request Completed | POST /trades/status=429 duration=0.003360689999681199
+2026-06-08 15:23:19 | INFO | app.main | Request started | GET /trades/
+2026-06-08 15:23:19 | INFO | app.main | request Completed | GET /trades/status=429 duration=0.0021325439993233886
+2026-06-08 15:23:19 | INFO | app.main | Request started | GET /trades/
+2026-06-08 15:23:19 | INFO | app.main | request Completed | GET /trades/status=429 duration=0.004047585000080289
+2026-06-08 15:23:19 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:23:19 | INFO | app.main | request Completed | POST /trades/status=429 duration=0.003740164000191726
+2026-06-08 15:23:19 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:23:19 | INFO | app.main | request Completed | POST /trades/status=429 duration=0.00648133300273912
+2026-06-08 15:23:19 | INFO | app.main | Request started | PATCH /trades/999/cancel
+2026-06-08 15:23:19 | INFO | app.main | request Completed | PATCH /trades/999/cancelstatus=429 duration=0.002869083997211419
+2026-06-08 15:23:51 | INFO | app.main | Created all DB Tables
+2026-06-08 15:23:56 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:23:56 | INFO | app.services | Creating Trade| symbol= AAPL, qty=10, price=150.0
+2026-06-08 15:23:56 | INFO | app.repositories | Created a new trade in the DB | id=1
+2026-06-08 15:23:56 | INFO | app.services | Trade created Successfully | id=1
+2026-06-08 15:23:56 | INFO | app.main | request Completed | POST /trades/status=201 duration=0.0295365470010438
+2026-06-08 15:23:56 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:23:56 | WARNING | app.main | Validation Error | POST /trades/ | [{'type': 'value_error', 'loc': ('body', 'symbol'), 'msg': 'Value error, symbol must only contain letter', 'input': 'AAPL123', 'ctx': {'error': ValueError('symbol must only contain letter')}, 'url': 'https://errors.pydantic.dev/2.13/v/value_error'}]
+2026-06-08 15:23:56 | WARNING | app.main | Enexpected Error | /trades/ | Object of type ValueError is not JSON serializable
+2026-06-08 15:23:57 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:23:57 | WARNING | app.main | Validation Error | POST /trades/ | [{'type': 'value_error', 'loc': ('body', 'quantity'), 'msg': 'Value error, quantity must be positive', 'input': -5, 'ctx': {'error': ValueError('quantity must be positive')}, 'url': 'https://errors.pydantic.dev/2.13/v/value_error'}]
+2026-06-08 15:23:57 | WARNING | app.main | Enexpected Error | /trades/ | Object of type ValueError is not JSON serializable
+2026-06-08 15:23:57 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:23:57 | WARNING | app.main | Validation Error | POST /trades/ | [{'type': 'value_error', 'loc': ('body', 'price'), 'msg': 'Value error, price must be positive', 'input': 0, 'ctx': {'error': ValueError('price must be positive')}, 'url': 'https://errors.pydantic.dev/2.13/v/value_error'}]
+2026-06-08 15:23:57 | WARNING | app.main | Enexpected Error | /trades/ | Object of type ValueError is not JSON serializable
+2026-06-08 15:23:57 | INFO | app.main | Request started | GET /trades/
+2026-06-08 15:23:57 | INFO | app.main | request Completed | GET /trades/status=200 duration=0.011888916000316385
+2026-06-08 15:23:57 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:23:57 | INFO | app.services | Creating Trade| symbol= AAPL, qty=10, price=150.0
+2026-06-08 15:23:57 | INFO | app.repositories | Created a new trade in the DB | id=1
+2026-06-08 15:23:57 | INFO | app.services | Trade created Successfully | id=1
+2026-06-08 15:23:57 | INFO | app.main | request Completed | POST /trades/status=201 duration=0.02486394100196776
+2026-06-08 15:23:57 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:23:57 | INFO | app.services | Creating Trade| symbol= GOOG, qty=5, price=200.0
+2026-06-08 15:23:57 | INFO | app.repositories | Created a new trade in the DB | id=2
+2026-06-08 15:23:57 | INFO | app.services | Trade created Successfully | id=2
+2026-06-08 15:23:57 | INFO | app.main | request Completed | POST /trades/status=201 duration=0.018159963998186868
+2026-06-08 15:23:57 | INFO | app.main | Request started | GET /trades/
+2026-06-08 15:23:57 | INFO | app.main | request Completed | GET /trades/status=200 duration=0.005726440002035815
+2026-06-08 15:23:57 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:23:57 | INFO | app.services | Creating Trade| symbol= AAPL, qty=10, price=150.0
+2026-06-08 15:23:57 | INFO | app.repositories | Created a new trade in the DB | id=1
+2026-06-08 15:23:57 | INFO | app.services | Trade created Successfully | id=1
+2026-06-08 15:23:57 | INFO | app.main | request Completed | POST /trades/status=201 duration=0.0227973490000295
+2026-06-08 15:23:57 | INFO | app.main | Request started | GET /trades/1
+2026-06-08 15:23:57 | INFO | app.main | request Completed | GET /trades/1status=200 duration=0.008396487999561941
+2026-06-08 15:23:58 | INFO | app.main | Request started | GET /trades/999
+2026-06-08 15:23:58 | INFO | app.main | request Completed | GET /trades/999status=429 duration=0.002260185003251536
+2026-06-08 15:23:58 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:23:58 | INFO | app.main | request Completed | POST /trades/status=429 duration=0.006152550999104278
+2026-06-08 15:23:58 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:23:58 | INFO | app.main | request Completed | POST /trades/status=429 duration=0.0035837249997712206
+2026-06-08 15:23:58 | INFO | app.main | Request started | GET /trades/
+2026-06-08 15:23:58 | INFO | app.main | request Completed | GET /trades/status=429 duration=0.0028160060028312728
+2026-06-08 15:23:58 | INFO | app.main | Request started | GET /trades/
+2026-06-08 15:23:58 | INFO | app.main | request Completed | GET /trades/status=429 duration=0.0026249609982187394
+2026-06-08 15:23:58 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:23:58 | INFO | app.main | request Completed | POST /trades/status=429 duration=0.0033988690011028666
+2026-06-08 15:23:58 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:23:58 | INFO | app.main | request Completed | POST /trades/status=429 duration=0.0034577400001580827
+2026-06-08 15:23:58 | INFO | app.main | Request started | PATCH /trades/999/cancel
+2026-06-08 15:23:58 | INFO | app.main | request Completed | PATCH /trades/999/cancelstatus=429 duration=0.0031027709992486052
+2026-06-08 15:26:57 | INFO | app.main | Created all DB Tables
+2026-06-08 15:27:05 | INFO | app.main | Created all DB Tables
+2026-06-08 15:27:16 | INFO | app.main | Created all DB Tables
+2026-06-08 15:27:25 | INFO | app.main | Created all DB Tables
+2026-06-08 15:27:27 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:27:27 | INFO | app.services | Creating Trade| symbol= AAPL, qty=10, price=150.0
+2026-06-08 15:27:27 | INFO | app.repositories | Created a new trade in the DB | id=1
+2026-06-08 15:27:27 | INFO | app.services | Trade created Successfully | id=1
+2026-06-08 15:27:27 | INFO | app.main | request Completed | POST /trades/status=201 duration=0.026942262997181388
+2026-06-08 15:27:27 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:27:27 | WARNING | app.main | Validation Error | POST /trades/ | [{'type': 'value_error', 'loc': ['body', 'symbol'], 'msg': 'Value error, symbol must only contain letter', 'input': 'AAPL123', 'ctx': {'error': {}}, 'url': 'https://errors.pydantic.dev/2.13/v/value_error'}]
+2026-06-08 15:27:27 | INFO | app.main | request Completed | POST /trades/status=422 duration=0.005512241001270013
+2026-06-08 15:27:27 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:27:27 | WARNING | app.main | Validation Error | POST /trades/ | [{'type': 'value_error', 'loc': ['body', 'quantity'], 'msg': 'Value error, quantity must be positive', 'input': -5, 'ctx': {'error': {}}, 'url': 'https://errors.pydantic.dev/2.13/v/value_error'}]
+2026-06-08 15:27:27 | INFO | app.main | request Completed | POST /trades/status=422 duration=0.011371554999641376
+2026-06-08 15:27:27 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:27:27 | WARNING | app.main | Validation Error | POST /trades/ | [{'type': 'value_error', 'loc': ['body', 'price'], 'msg': 'Value error, price must be positive', 'input': 0, 'ctx': {'error': {}}, 'url': 'https://errors.pydantic.dev/2.13/v/value_error'}]
+2026-06-08 15:27:27 | INFO | app.main | request Completed | POST /trades/status=422 duration=0.008432971000729594
+2026-06-08 15:27:28 | INFO | app.main | Request started | GET /trades/
+2026-06-08 15:27:28 | INFO | app.main | request Completed | GET /trades/status=200 duration=0.024834904001181712
+2026-06-08 15:27:28 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:27:28 | INFO | app.services | Creating Trade| symbol= AAPL, qty=10, price=150.0
+2026-06-08 15:27:28 | INFO | app.repositories | Created a new trade in the DB | id=1
+2026-06-08 15:27:28 | INFO | app.services | Trade created Successfully | id=1
+2026-06-08 15:27:28 | INFO | app.main | request Completed | POST /trades/status=201 duration=0.02810856499854708
+2026-06-08 15:27:28 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:27:28 | INFO | app.services | Creating Trade| symbol= GOOG, qty=5, price=200.0
+2026-06-08 15:27:28 | INFO | app.repositories | Created a new trade in the DB | id=2
+2026-06-08 15:27:28 | INFO | app.services | Trade created Successfully | id=2
+2026-06-08 15:27:28 | INFO | app.main | request Completed | POST /trades/status=201 duration=0.019712885998160345
+2026-06-08 15:27:28 | INFO | app.main | Request started | GET /trades/
+2026-06-08 15:27:28 | INFO | app.main | request Completed | GET /trades/status=200 duration=0.0075815679992956575
+2026-06-08 15:27:28 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:27:28 | INFO | app.services | Creating Trade| symbol= AAPL, qty=10, price=150.0
+2026-06-08 15:27:28 | INFO | app.repositories | Created a new trade in the DB | id=1
+2026-06-08 15:27:28 | INFO | app.services | Trade created Successfully | id=1
+2026-06-08 15:27:28 | INFO | app.main | request Completed | POST /trades/status=201 duration=0.026280775000486756
+2026-06-08 15:27:28 | INFO | app.main | Request started | GET /trades/1
+2026-06-08 15:27:28 | INFO | app.main | request Completed | GET /trades/1status=200 duration=0.01121703399985563
+2026-06-08 15:27:28 | INFO | app.main | Request started | GET /trades/999
+2026-06-08 15:27:28 | INFO | app.main | request Completed | GET /trades/999status=429 duration=0.0026700700000219513
+2026-06-08 15:27:28 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:27:28 | INFO | app.main | request Completed | POST /trades/status=429 duration=0.0036732269982167054
+2026-06-08 15:27:28 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:27:28 | INFO | app.main | request Completed | POST /trades/status=429 duration=0.00476443000297877
+2026-06-08 15:27:28 | INFO | app.main | Request started | GET /trades/
+2026-06-08 15:27:28 | INFO | app.main | request Completed | GET /trades/status=429 duration=0.002564157999586314
+2026-06-08 15:27:28 | INFO | app.main | Request started | GET /trades/
+2026-06-08 15:27:28 | INFO | app.main | request Completed | GET /trades/status=429 duration=0.0025838410001597367
+2026-06-08 15:27:28 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:27:28 | INFO | app.main | request Completed | POST /trades/status=429 duration=0.0031615170009899884
+2026-06-08 15:27:28 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:27:28 | INFO | app.main | request Completed | POST /trades/status=429 duration=0.0039565279985254165
+2026-06-08 15:27:28 | INFO | app.main | Request started | PATCH /trades/999/cancel
+2026-06-08 15:27:28 | INFO | app.main | request Completed | PATCH /trades/999/cancelstatus=429 duration=0.0026185459973930847
+2026-06-08 15:28:01 | INFO | app.main | Created all DB Tables
+2026-06-08 15:28:07 | INFO | app.main | Created all DB Tables
+2026-06-08 15:28:10 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:28:10 | INFO | app.services | Creating Trade| symbol= AAPL, qty=10, price=150.0
+2026-06-08 15:28:10 | INFO | app.repositories | Created a new trade in the DB | id=1
+2026-06-08 15:28:10 | INFO | app.services | Trade created Successfully | id=1
+2026-06-08 15:28:10 | INFO | app.main | request Completed | POST /trades/status=201 duration=0.02728726799978176
+2026-06-08 15:28:10 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:28:10 | WARNING | app.main | Validation Error | POST /trades/ | [{'type': 'value_error', 'loc': ['body', 'symbol'], 'msg': 'Value error, symbol must only contain letter', 'input': 'AAPL123', 'ctx': {'error': {}}, 'url': 'https://errors.pydantic.dev/2.13/v/value_error'}]
+2026-06-08 15:28:10 | INFO | app.main | request Completed | POST /trades/status=422 duration=0.005411957001342671
+2026-06-08 15:28:10 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:28:10 | WARNING | app.main | Validation Error | POST /trades/ | [{'type': 'value_error', 'loc': ['body', 'quantity'], 'msg': 'Value error, quantity must be positive', 'input': -5, 'ctx': {'error': {}}, 'url': 'https://errors.pydantic.dev/2.13/v/value_error'}]
+2026-06-08 15:28:10 | INFO | app.main | request Completed | POST /trades/status=422 duration=0.006062679996830411
+2026-06-08 15:28:10 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:28:10 | WARNING | app.main | Validation Error | POST /trades/ | [{'type': 'value_error', 'loc': ['body', 'price'], 'msg': 'Value error, price must be positive', 'input': 0, 'ctx': {'error': {}}, 'url': 'https://errors.pydantic.dev/2.13/v/value_error'}]
+2026-06-08 15:28:10 | INFO | app.main | request Completed | POST /trades/status=422 duration=0.005683411000063643
+2026-06-08 15:28:10 | INFO | app.main | Request started | GET /trades/
+2026-06-08 15:28:10 | INFO | app.main | request Completed | GET /trades/status=200 duration=0.009882761998596834
+2026-06-08 15:28:10 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:28:10 | INFO | app.services | Creating Trade| symbol= AAPL, qty=10, price=150.0
+2026-06-08 15:28:10 | INFO | app.repositories | Created a new trade in the DB | id=1
+2026-06-08 15:28:10 | INFO | app.services | Trade created Successfully | id=1
+2026-06-08 15:28:10 | INFO | app.main | request Completed | POST /trades/status=201 duration=0.021006222999858437
+2026-06-08 15:28:10 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:28:10 | INFO | app.services | Creating Trade| symbol= GOOG, qty=5, price=200.0
+2026-06-08 15:28:10 | INFO | app.repositories | Created a new trade in the DB | id=2
+2026-06-08 15:28:10 | INFO | app.services | Trade created Successfully | id=2
+2026-06-08 15:28:10 | INFO | app.main | request Completed | POST /trades/status=201 duration=0.022287643998424755
+2026-06-08 15:28:10 | INFO | app.main | Request started | GET /trades/
+2026-06-08 15:28:10 | INFO | app.main | request Completed | GET /trades/status=200 duration=0.006809041999076726
+2026-06-08 15:28:10 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:28:10 | INFO | app.services | Creating Trade| symbol= AAPL, qty=10, price=150.0
+2026-06-08 15:28:10 | INFO | app.repositories | Created a new trade in the DB | id=1
+2026-06-08 15:28:10 | INFO | app.services | Trade created Successfully | id=1
+2026-06-08 15:28:10 | INFO | app.main | request Completed | POST /trades/status=201 duration=0.027325458999257535
+2026-06-08 15:28:10 | INFO | app.main | Request started | GET /trades/1
+2026-06-08 15:28:10 | INFO | app.main | request Completed | GET /trades/1status=200 duration=0.013950214997748844
+2026-06-08 15:28:10 | INFO | app.main | Request started | GET /trades/999
+2026-06-08 15:28:10 | WARNING | app.services | trade does not exist | id=999
+2026-06-08 15:28:10 | INFO | app.main | request Completed | GET /trades/999status=404 duration=0.010036656000011135
+2026-06-08 15:28:10 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:28:10 | INFO | app.services | Creating Trade| symbol= AAPL, qty=10, price=150.0
+2026-06-08 15:28:10 | INFO | app.repositories | Created a new trade in the DB | id=1
+2026-06-08 15:28:10 | INFO | app.services | Trade created Successfully | id=1
+2026-06-08 15:28:10 | INFO | app.main | request Completed | POST /trades/status=201 duration=0.017432803000701824
+2026-06-08 15:28:10 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:28:10 | INFO | app.services | Creating Trade| symbol= GOOG, qty=5, price=200.0
+2026-06-08 15:28:10 | INFO | app.repositories | Created a new trade in the DB | id=2
+2026-06-08 15:28:10 | INFO | app.services | Trade created Successfully | id=2
+2026-06-08 15:28:10 | INFO | app.main | request Completed | POST /trades/status=201 duration=0.016448839000076987
+2026-06-08 15:28:10 | INFO | app.main | Request started | GET /trades/
+2026-06-08 15:28:10 | INFO | app.main | request Completed | GET /trades/status=200 duration=0.006747179999365471
+2026-06-08 15:28:10 | INFO | app.main | Request started | GET /trades/
+2026-06-08 15:28:10 | INFO | app.main | request Completed | GET /trades/status=200 duration=0.008729563000088092
+2026-06-08 15:28:11 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:28:11 | INFO | app.services | Creating Trade| symbol= AAPL, qty=10, price=150.0
+2026-06-08 15:28:11 | INFO | app.repositories | Created a new trade in the DB | id=1
+2026-06-08 15:28:11 | INFO | app.services | Trade created Successfully | id=1
+2026-06-08 15:28:11 | INFO | app.main | request Completed | POST /trades/status=201 duration=0.023026440001558512
+2026-06-08 15:28:11 | INFO | app.main | Request started | PATCH /trades/1/cancel
+2026-06-08 15:28:11 | INFO | app.services | Cancelling Trade | id=1
+2026-06-08 15:28:11 | INFO | app.services | Trade successfully Cancelled | id=1
+2026-06-08 15:28:11 | INFO | app.main | request Completed | PATCH /trades/1/cancelstatus=200 duration=0.02228769399880548
+2026-06-08 15:28:11 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:28:11 | INFO | app.services | Creating Trade| symbol= AAPL, qty=10, price=150.0
+2026-06-08 15:28:11 | INFO | app.repositories | Created a new trade in the DB | id=1
+2026-06-08 15:28:11 | INFO | app.services | Trade created Successfully | id=1
+2026-06-08 15:28:11 | INFO | app.main | request Completed | POST /trades/status=201 duration=0.02131809999991674
+2026-06-08 15:28:11 | INFO | app.main | Request started | PATCH /trades/1/cancel
+2026-06-08 15:28:11 | INFO | app.services | Cancelling Trade | id=1
+2026-06-08 15:28:11 | INFO | app.services | Trade successfully Cancelled | id=1
+2026-06-08 15:28:11 | INFO | app.main | request Completed | PATCH /trades/1/cancelstatus=200 duration=0.019436629001575056
+2026-06-08 15:28:11 | INFO | app.main | Request started | PATCH /trades/1/cancel
+2026-06-08 15:28:11 | INFO | app.services | Cancelling Trade | id=1
+2026-06-08 15:28:11 | WARNING | app.services | trade already cancelled | id=1
+2026-06-08 15:28:11 | INFO | app.main | request Completed | PATCH /trades/1/cancelstatus=400 duration=0.010764402002678253
+2026-06-08 15:28:11 | INFO | app.main | Request started | PATCH /trades/999/cancel
+2026-06-08 15:28:11 | INFO | app.services | Cancelling Trade | id=999
+2026-06-08 15:28:11 | WARNING | app.services | trade does not exist | id=999
+2026-06-08 15:28:11 | INFO | app.main | request Completed | PATCH /trades/999/cancelstatus=404 duration=0.011646735998510849
+2026-06-08 15:29:42 | INFO | app.main | Created all DB Tables
+2026-06-08 15:29:45 | INFO | app.main | Created all DB Tables
+2026-06-08 15:29:47 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:29:47 | INFO | app.services | Creating Trade| symbol= AAPL, qty=10, price=150.0
+2026-06-08 15:29:47 | INFO | app.repositories | Created a new trade in the DB | id=1
+2026-06-08 15:29:47 | INFO | app.services | Trade created Successfully | id=1
+2026-06-08 15:29:47 | INFO | app.main | request Completed | POST /trades/status=201 duration=0.026883757000177866
+2026-06-08 15:29:47 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:29:47 | WARNING | app.main | Validation Error | POST /trades/ | [{'type': 'value_error', 'loc': ['body', 'symbol'], 'msg': 'Value error, symbol must only contain letter', 'input': 'AAPL123', 'ctx': {'error': {}}, 'url': 'https://errors.pydantic.dev/2.13/v/value_error'}]
+2026-06-08 15:29:47 | INFO | app.main | request Completed | POST /trades/status=422 duration=0.004907960999844363
+2026-06-08 15:29:47 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:29:47 | WARNING | app.main | Validation Error | POST /trades/ | [{'type': 'value_error', 'loc': ['body', 'quantity'], 'msg': 'Value error, quantity must be positive', 'input': -5, 'ctx': {'error': {}}, 'url': 'https://errors.pydantic.dev/2.13/v/value_error'}]
+2026-06-08 15:29:47 | INFO | app.main | request Completed | POST /trades/status=422 duration=0.0072579959996801335
+2026-06-08 15:29:47 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:29:47 | WARNING | app.main | Validation Error | POST /trades/ | [{'type': 'value_error', 'loc': ['body', 'price'], 'msg': 'Value error, price must be positive', 'input': 0, 'ctx': {'error': {}}, 'url': 'https://errors.pydantic.dev/2.13/v/value_error'}]
+2026-06-08 15:29:47 | INFO | app.main | request Completed | POST /trades/status=422 duration=0.00393331300074351
+2026-06-08 15:29:47 | INFO | app.main | Request started | GET /trades/
+2026-06-08 15:29:47 | INFO | app.main | request Completed | GET /trades/status=200 duration=0.014085695998801384
+2026-06-08 15:29:47 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:29:47 | INFO | app.services | Creating Trade| symbol= AAPL, qty=10, price=150.0
+2026-06-08 15:29:47 | INFO | app.repositories | Created a new trade in the DB | id=1
+2026-06-08 15:29:47 | INFO | app.services | Trade created Successfully | id=1
+2026-06-08 15:29:47 | INFO | app.main | request Completed | POST /trades/status=201 duration=0.019642878000013297
+2026-06-08 15:29:47 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:29:47 | INFO | app.services | Creating Trade| symbol= GOOG, qty=5, price=200.0
+2026-06-08 15:29:47 | INFO | app.repositories | Created a new trade in the DB | id=2
+2026-06-08 15:29:47 | INFO | app.services | Trade created Successfully | id=2
+2026-06-08 15:29:47 | INFO | app.main | request Completed | POST /trades/status=201 duration=0.018006549998972332
+2026-06-08 15:29:47 | INFO | app.main | Request started | GET /trades/
+2026-06-08 15:29:47 | INFO | app.main | request Completed | GET /trades/status=200 duration=0.005884170001081657
+2026-06-08 15:29:47 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:29:47 | INFO | app.services | Creating Trade| symbol= AAPL, qty=10, price=150.0
+2026-06-08 15:29:47 | INFO | app.repositories | Created a new trade in the DB | id=1
+2026-06-08 15:29:47 | INFO | app.services | Trade created Successfully | id=1
+2026-06-08 15:29:47 | INFO | app.main | request Completed | POST /trades/status=201 duration=0.03235704600228928
+2026-06-08 15:29:47 | INFO | app.main | Request started | GET /trades/1
+2026-06-08 15:29:47 | INFO | app.main | request Completed | GET /trades/1status=200 duration=0.010310467001545476
+2026-06-08 15:29:47 | INFO | app.main | Request started | GET /trades/999
+2026-06-08 15:29:47 | WARNING | app.services | trade does not exist | id=999
+2026-06-08 15:29:47 | INFO | app.main | request Completed | GET /trades/999status=404 duration=0.014635207000537775
+2026-06-08 15:29:47 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:29:47 | INFO | app.services | Creating Trade| symbol= AAPL, qty=10, price=150.0
+2026-06-08 15:29:47 | INFO | app.repositories | Created a new trade in the DB | id=1
+2026-06-08 15:29:47 | INFO | app.services | Trade created Successfully | id=1
+2026-06-08 15:29:47 | INFO | app.main | request Completed | POST /trades/status=201 duration=0.019897025002137525
+2026-06-08 15:29:47 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:29:47 | INFO | app.services | Creating Trade| symbol= GOOG, qty=5, price=200.0
+2026-06-08 15:29:47 | INFO | app.repositories | Created a new trade in the DB | id=2
+2026-06-08 15:29:47 | INFO | app.services | Trade created Successfully | id=2
+2026-06-08 15:29:47 | INFO | app.main | request Completed | POST /trades/status=201 duration=0.028095568999560783
+2026-06-08 15:29:47 | INFO | app.main | Request started | GET /trades/
+2026-06-08 15:29:47 | INFO | app.main | request Completed | GET /trades/status=200 duration=0.014471296999545302
+2026-06-08 15:29:48 | INFO | app.main | Request started | GET /trades/
+2026-06-08 15:29:48 | INFO | app.main | request Completed | GET /trades/status=200 duration=0.013214004000474233
+2026-06-08 15:29:48 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:29:48 | INFO | app.services | Creating Trade| symbol= AAPL, qty=10, price=150.0
+2026-06-08 15:29:48 | INFO | app.repositories | Created a new trade in the DB | id=1
+2026-06-08 15:29:48 | INFO | app.services | Trade created Successfully | id=1
+2026-06-08 15:29:48 | INFO | app.main | request Completed | POST /trades/status=201 duration=0.023983781000424642
+2026-06-08 15:29:48 | INFO | app.main | Request started | PATCH /trades/1/cancel
+2026-06-08 15:29:48 | INFO | app.services | Cancelling Trade | id=1
+2026-06-08 15:29:48 | INFO | app.services | Trade successfully Cancelled | id=1
+2026-06-08 15:29:48 | INFO | app.main | request Completed | PATCH /trades/1/cancelstatus=200 duration=0.022589185999095207
+2026-06-08 15:29:48 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:29:48 | INFO | app.services | Creating Trade| symbol= AAPL, qty=10, price=150.0
+2026-06-08 15:29:48 | INFO | app.repositories | Created a new trade in the DB | id=1
+2026-06-08 15:29:48 | INFO | app.services | Trade created Successfully | id=1
+2026-06-08 15:29:48 | INFO | app.main | request Completed | POST /trades/status=201 duration=0.02032108599814819
+2026-06-08 15:29:48 | INFO | app.main | Request started | PATCH /trades/1/cancel
+2026-06-08 15:29:48 | INFO | app.services | Cancelling Trade | id=1
+2026-06-08 15:29:48 | INFO | app.services | Trade successfully Cancelled | id=1
+2026-06-08 15:29:48 | INFO | app.main | request Completed | PATCH /trades/1/cancelstatus=200 duration=0.019613336997281294
+2026-06-08 15:29:48 | INFO | app.main | Request started | PATCH /trades/1/cancel
+2026-06-08 15:29:48 | INFO | app.services | Cancelling Trade | id=1
+2026-06-08 15:29:48 | WARNING | app.services | trade already cancelled | id=1
+2026-06-08 15:29:48 | INFO | app.main | request Completed | PATCH /trades/1/cancelstatus=400 duration=0.006451127999753226
+2026-06-08 15:29:48 | INFO | app.main | Request started | PATCH /trades/999/cancel
+2026-06-08 15:29:48 | INFO | app.services | Cancelling Trade | id=999
+2026-06-08 15:29:48 | WARNING | app.services | trade does not exist | id=999
+2026-06-08 15:29:48 | INFO | app.main | request Completed | PATCH /trades/999/cancelstatus=404 duration=0.010487457999261096
+2026-06-08 15:29:48 | INFO | app.main | Request started | GET /trades/
+2026-06-08 15:29:48 | WARNING | app.auth | request missing APi key
+2026-06-08 15:29:48 | INFO | app.main | request Completed | GET /trades/status=401 duration=0.003130491000774782
+2026-06-08 15:29:48 | INFO | app.main | Request started | GET /trades/
+2026-06-08 15:29:48 | WARNING | app.auth | Invalid API key attempt | key=wrong-....
+2026-06-08 15:29:48 | INFO | app.main | request Completed | GET /trades/status=403 duration=0.002959671001008246
+2026-06-08 15:30:25 | INFO | app.main | Created all DB Tables
+2026-06-08 15:30:29 | INFO | app.main | Created all DB Tables
+2026-06-08 15:30:31 | INFO | app.main | Created all DB Tables
+2026-06-08 15:30:34 | INFO | app.main | Created all DB Tables
+2026-06-08 15:31:17 | INFO | app.main | Created all DB Tables
+2026-06-08 15:31:18 | INFO | app.main | Created all DB Tables
+2026-06-08 15:31:35 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:31:35 | INFO | app.services | Creating Trade| symbol= AAPL, qty=10, price=150.0
+2026-06-08 15:31:35 | INFO | app.repositories | Created a new trade in the DB | id=1
+2026-06-08 15:31:35 | INFO | app.services | Trade created Successfully | id=1
+2026-06-08 15:31:35 | INFO | app.main | request Completed | POST /trades/status=201 duration=0.026045410999358865
+2026-06-08 15:31:35 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:31:35 | WARNING | app.main | Validation Error | POST /trades/ | [{'type': 'value_error', 'loc': ['body', 'symbol'], 'msg': 'Value error, symbol must only contain letter', 'input': 'AAPL123', 'ctx': {'error': {}}, 'url': 'https://errors.pydantic.dev/2.13/v/value_error'}]
+2026-06-08 15:31:35 | INFO | app.main | request Completed | POST /trades/status=422 duration=0.005751690998295089
+2026-06-08 15:31:35 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:31:35 | WARNING | app.main | Validation Error | POST /trades/ | [{'type': 'value_error', 'loc': ['body', 'quantity'], 'msg': 'Value error, quantity must be positive', 'input': -5, 'ctx': {'error': {}}, 'url': 'https://errors.pydantic.dev/2.13/v/value_error'}]
+2026-06-08 15:31:35 | INFO | app.main | request Completed | POST /trades/status=422 duration=0.005546781998418737
+2026-06-08 15:31:35 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:31:35 | WARNING | app.main | Validation Error | POST /trades/ | [{'type': 'value_error', 'loc': ['body', 'price'], 'msg': 'Value error, price must be positive', 'input': 0, 'ctx': {'error': {}}, 'url': 'https://errors.pydantic.dev/2.13/v/value_error'}]
+2026-06-08 15:31:35 | INFO | app.main | request Completed | POST /trades/status=422 duration=0.007750165998004377
+2026-06-08 15:31:35 | INFO | app.main | Request started | GET /trades/
+2026-06-08 15:31:35 | INFO | app.main | request Completed | GET /trades/status=200 duration=0.014418822000152431
+2026-06-08 15:31:35 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:31:35 | INFO | app.services | Creating Trade| symbol= AAPL, qty=10, price=150.0
+2026-06-08 15:31:35 | INFO | app.repositories | Created a new trade in the DB | id=1
+2026-06-08 15:31:35 | INFO | app.services | Trade created Successfully | id=1
+2026-06-08 15:31:35 | INFO | app.main | request Completed | POST /trades/status=201 duration=0.021960584999760613
+2026-06-08 15:31:35 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:31:35 | INFO | app.services | Creating Trade| symbol= GOOG, qty=5, price=200.0
+2026-06-08 15:31:35 | INFO | app.repositories | Created a new trade in the DB | id=2
+2026-06-08 15:31:35 | INFO | app.services | Trade created Successfully | id=2
+2026-06-08 15:31:35 | INFO | app.main | request Completed | POST /trades/status=201 duration=0.01698783399842796
+2026-06-08 15:31:35 | INFO | app.main | Request started | GET /trades/
+2026-06-08 15:31:35 | INFO | app.main | request Completed | GET /trades/status=200 duration=0.007022578000032809
+2026-06-08 15:31:35 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:31:35 | INFO | app.services | Creating Trade| symbol= AAPL, qty=10, price=150.0
+2026-06-08 15:31:35 | INFO | app.repositories | Created a new trade in the DB | id=1
+2026-06-08 15:31:35 | INFO | app.services | Trade created Successfully | id=1
+2026-06-08 15:31:35 | INFO | app.main | request Completed | POST /trades/status=201 duration=0.023000269000476692
+2026-06-08 15:31:35 | INFO | app.main | Request started | GET /trades/1
+2026-06-08 15:31:35 | INFO | app.main | request Completed | GET /trades/1status=200 duration=0.00820358900091378
+2026-06-08 15:31:35 | INFO | app.main | Request started | GET /trades/999
+2026-06-08 15:31:35 | WARNING | app.services | trade does not exist | id=999
+2026-06-08 15:31:35 | INFO | app.main | request Completed | GET /trades/999status=404 duration=0.008222865999414353
+2026-06-08 15:31:35 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:31:35 | INFO | app.services | Creating Trade| symbol= AAPL, qty=10, price=150.0
+2026-06-08 15:31:35 | INFO | app.repositories | Created a new trade in the DB | id=1
+2026-06-08 15:31:35 | INFO | app.services | Trade created Successfully | id=1
+2026-06-08 15:31:35 | INFO | app.main | request Completed | POST /trades/status=201 duration=0.027432260001660325
+2026-06-08 15:31:35 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:31:35 | INFO | app.services | Creating Trade| symbol= GOOG, qty=5, price=200.0
+2026-06-08 15:31:36 | INFO | app.repositories | Created a new trade in the DB | id=2
+2026-06-08 15:31:36 | INFO | app.services | Trade created Successfully | id=2
+2026-06-08 15:31:36 | INFO | app.main | request Completed | POST /trades/status=201 duration=0.024983082999824546
+2026-06-08 15:31:36 | INFO | app.main | Request started | GET /trades/
+2026-06-08 15:31:36 | INFO | app.main | request Completed | GET /trades/status=200 duration=0.013173299998015864
+2026-06-08 15:31:36 | INFO | app.main | Request started | GET /trades/
+2026-06-08 15:31:36 | INFO | app.main | request Completed | GET /trades/status=200 duration=0.011103982000349788
+2026-06-08 15:31:36 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:31:36 | INFO | app.services | Creating Trade| symbol= AAPL, qty=10, price=150.0
+2026-06-08 15:31:36 | INFO | app.repositories | Created a new trade in the DB | id=1
+2026-06-08 15:31:36 | INFO | app.services | Trade created Successfully | id=1
+2026-06-08 15:31:36 | INFO | app.main | request Completed | POST /trades/status=201 duration=0.024616170001536375
+2026-06-08 15:31:36 | INFO | app.main | Request started | PATCH /trades/1/cancel
+2026-06-08 15:31:36 | INFO | app.services | Cancelling Trade | id=1
+2026-06-08 15:31:36 | INFO | app.services | Trade successfully Cancelled | id=1
+2026-06-08 15:31:36 | INFO | app.main | request Completed | PATCH /trades/1/cancelstatus=200 duration=0.019740276999073103
+2026-06-08 15:31:36 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:31:36 | INFO | app.services | Creating Trade| symbol= AAPL, qty=10, price=150.0
+2026-06-08 15:31:36 | INFO | app.repositories | Created a new trade in the DB | id=1
+2026-06-08 15:31:36 | INFO | app.services | Trade created Successfully | id=1
+2026-06-08 15:31:36 | INFO | app.main | request Completed | POST /trades/status=201 duration=0.021926045999862254
+2026-06-08 15:31:36 | INFO | app.main | Request started | PATCH /trades/1/cancel
+2026-06-08 15:31:36 | INFO | app.services | Cancelling Trade | id=1
+2026-06-08 15:31:36 | INFO | app.services | Trade successfully Cancelled | id=1
+2026-06-08 15:31:36 | INFO | app.main | request Completed | PATCH /trades/1/cancelstatus=200 duration=0.017548586998600513
+2026-06-08 15:31:36 | INFO | app.main | Request started | PATCH /trades/1/cancel
+2026-06-08 15:31:36 | INFO | app.services | Cancelling Trade | id=1
+2026-06-08 15:31:36 | WARNING | app.services | trade already cancelled | id=1
+2026-06-08 15:31:36 | INFO | app.main | request Completed | PATCH /trades/1/cancelstatus=400 duration=0.006730409000738291
+2026-06-08 15:31:36 | INFO | app.main | Request started | PATCH /trades/999/cancel
+2026-06-08 15:31:36 | INFO | app.services | Cancelling Trade | id=999
+2026-06-08 15:31:36 | WARNING | app.services | trade does not exist | id=999
+2026-06-08 15:31:36 | INFO | app.main | request Completed | PATCH /trades/999/cancelstatus=404 duration=0.007864292001613649
+2026-06-08 15:31:36 | INFO | app.main | Request started | GET /trades/
+2026-06-08 15:31:36 | WARNING | app.auth | request missing APi key
+2026-06-08 15:31:36 | INFO | app.main | request Completed | GET /trades/status=401 duration=0.002220500999101205
+2026-06-08 15:31:36 | INFO | app.main | Request started | GET /trades/
+2026-06-08 15:31:36 | WARNING | app.auth | Invalid API key attempt | key=wrong-....
+2026-06-08 15:31:36 | INFO | app.main | request Completed | GET /trades/status=403 duration=0.0031530820015177596
+2026-06-08 15:31:49 | INFO | app.main | Created all DB Tables
+2026-06-08 15:31:54 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:31:54 | INFO | app.services | Creating Trade| symbol= AAPL, qty=10, price=150.0
+2026-06-08 15:31:54 | INFO | app.repositories | Created a new trade in the DB | id=1
+2026-06-08 15:31:54 | INFO | app.services | Trade created Successfully | id=1
+2026-06-08 15:31:54 | INFO | app.main | request Completed | POST /trades/status=201 duration=0.0291523279993271
+2026-06-08 15:31:54 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:31:54 | WARNING | app.main | Validation Error | POST /trades/ | [{'type': 'value_error', 'loc': ['body', 'symbol'], 'msg': 'Value error, symbol must only contain letter', 'input': 'AAPL123', 'ctx': {'error': {}}, 'url': 'https://errors.pydantic.dev/2.13/v/value_error'}]
+2026-06-08 15:31:54 | INFO | app.main | request Completed | POST /trades/status=422 duration=0.006993667000642745
+2026-06-08 15:31:54 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:31:54 | WARNING | app.main | Validation Error | POST /trades/ | [{'type': 'value_error', 'loc': ['body', 'quantity'], 'msg': 'Value error, quantity must be positive', 'input': -5, 'ctx': {'error': {}}, 'url': 'https://errors.pydantic.dev/2.13/v/value_error'}]
+2026-06-08 15:31:54 | INFO | app.main | request Completed | POST /trades/status=422 duration=0.005759027000749484
+2026-06-08 15:31:55 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:31:55 | WARNING | app.main | Validation Error | POST /trades/ | [{'type': 'value_error', 'loc': ['body', 'price'], 'msg': 'Value error, price must be positive', 'input': 0, 'ctx': {'error': {}}, 'url': 'https://errors.pydantic.dev/2.13/v/value_error'}]
+2026-06-08 15:31:55 | INFO | app.main | request Completed | POST /trades/status=422 duration=0.008361470001545968
+2026-06-08 15:31:55 | INFO | app.main | Request started | GET /trades/
+2026-06-08 15:31:55 | INFO | app.main | request Completed | GET /trades/status=200 duration=0.0187757160019828
+2026-06-08 15:31:55 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:31:55 | INFO | app.services | Creating Trade| symbol= AAPL, qty=10, price=150.0
+2026-06-08 15:31:55 | INFO | app.repositories | Created a new trade in the DB | id=1
+2026-06-08 15:31:55 | INFO | app.services | Trade created Successfully | id=1
+2026-06-08 15:31:55 | INFO | app.main | request Completed | POST /trades/status=201 duration=0.023081486000592122
+2026-06-08 15:31:55 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:31:55 | INFO | app.services | Creating Trade| symbol= GOOG, qty=5, price=200.0
+2026-06-08 15:31:55 | INFO | app.repositories | Created a new trade in the DB | id=2
+2026-06-08 15:31:55 | INFO | app.services | Trade created Successfully | id=2
+2026-06-08 15:31:55 | INFO | app.main | request Completed | POST /trades/status=201 duration=0.01966958500270266
+2026-06-08 15:31:55 | INFO | app.main | Request started | GET /trades/
+2026-06-08 15:31:55 | INFO | app.main | request Completed | GET /trades/status=200 duration=0.00615274300071178
+2026-06-08 15:31:55 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:31:55 | INFO | app.services | Creating Trade| symbol= AAPL, qty=10, price=150.0
+2026-06-08 15:31:55 | INFO | app.repositories | Created a new trade in the DB | id=1
+2026-06-08 15:31:55 | INFO | app.services | Trade created Successfully | id=1
+2026-06-08 15:31:55 | INFO | app.main | request Completed | POST /trades/status=201 duration=0.02153743700182531
+2026-06-08 15:31:55 | INFO | app.main | Request started | GET /trades/1
+2026-06-08 15:31:55 | INFO | app.main | request Completed | GET /trades/1status=200 duration=0.008332445999258198
+2026-06-08 15:31:55 | INFO | app.main | Request started | GET /trades/999
+2026-06-08 15:31:55 | WARNING | app.services | trade does not exist | id=999
+2026-06-08 15:31:55 | INFO | app.main | request Completed | GET /trades/999status=404 duration=0.009413544001290575
+2026-06-08 15:31:55 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:31:55 | INFO | app.services | Creating Trade| symbol= AAPL, qty=10, price=150.0
+2026-06-08 15:31:55 | INFO | app.repositories | Created a new trade in the DB | id=1
+2026-06-08 15:31:55 | INFO | app.services | Trade created Successfully | id=1
+2026-06-08 15:31:55 | INFO | app.main | request Completed | POST /trades/status=201 duration=0.02235479699811549
+2026-06-08 15:31:55 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:31:55 | INFO | app.services | Creating Trade| symbol= GOOG, qty=5, price=200.0
+2026-06-08 15:31:55 | INFO | app.repositories | Created a new trade in the DB | id=2
+2026-06-08 15:31:55 | INFO | app.services | Trade created Successfully | id=2
+2026-06-08 15:31:55 | INFO | app.main | request Completed | POST /trades/status=201 duration=0.017980790998990415
+2026-06-08 15:31:55 | INFO | app.main | Request started | GET /trades/
+2026-06-08 15:31:55 | INFO | app.main | request Completed | GET /trades/status=200 duration=0.0072538019994681235
+2026-06-08 15:31:55 | INFO | app.main | Request started | GET /trades/
+2026-06-08 15:31:55 | INFO | app.main | request Completed | GET /trades/status=200 duration=0.012034430001222063
+2026-06-08 15:31:55 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:31:55 | INFO | app.services | Creating Trade| symbol= AAPL, qty=10, price=150.0
+2026-06-08 15:31:55 | INFO | app.repositories | Created a new trade in the DB | id=1
+2026-06-08 15:31:55 | INFO | app.services | Trade created Successfully | id=1
+2026-06-08 15:31:55 | INFO | app.main | request Completed | POST /trades/status=201 duration=0.02106277799975942
+2026-06-08 15:31:55 | INFO | app.main | Request started | PATCH /trades/1/cancel
+2026-06-08 15:31:55 | INFO | app.services | Cancelling Trade | id=1
+2026-06-08 15:31:55 | INFO | app.services | Trade successfully Cancelled | id=1
+2026-06-08 15:31:55 | INFO | app.main | request Completed | PATCH /trades/1/cancelstatus=200 duration=0.021249032000923762
+2026-06-08 15:31:55 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:31:55 | INFO | app.services | Creating Trade| symbol= AAPL, qty=10, price=150.0
+2026-06-08 15:31:55 | INFO | app.repositories | Created a new trade in the DB | id=1
+2026-06-08 15:31:55 | INFO | app.services | Trade created Successfully | id=1
+2026-06-08 15:31:55 | INFO | app.main | request Completed | POST /trades/status=201 duration=0.020120509001571918
+2026-06-08 15:31:55 | INFO | app.main | Request started | PATCH /trades/1/cancel
+2026-06-08 15:31:55 | INFO | app.services | Cancelling Trade | id=1
+2026-06-08 15:31:55 | INFO | app.services | Trade successfully Cancelled | id=1
+2026-06-08 15:31:55 | INFO | app.main | request Completed | PATCH /trades/1/cancelstatus=200 duration=0.019558267002139473
+2026-06-08 15:31:55 | INFO | app.main | Request started | PATCH /trades/1/cancel
+2026-06-08 15:31:55 | INFO | app.services | Cancelling Trade | id=1
+2026-06-08 15:31:55 | WARNING | app.services | trade already cancelled | id=1
+2026-06-08 15:31:55 | INFO | app.main | request Completed | PATCH /trades/1/cancelstatus=400 duration=0.008266496999567607
+2026-06-08 15:31:55 | INFO | app.main | Request started | PATCH /trades/999/cancel
+2026-06-08 15:31:55 | INFO | app.services | Cancelling Trade | id=999
+2026-06-08 15:31:55 | WARNING | app.services | trade does not exist | id=999
+2026-06-08 15:31:55 | INFO | app.main | request Completed | PATCH /trades/999/cancelstatus=404 duration=0.009342050001578173
+2026-06-08 15:31:55 | INFO | app.main | Request started | GET /trades/
+2026-06-08 15:31:55 | WARNING | app.auth | request missing APi key
+2026-06-08 15:31:55 | INFO | app.main | request Completed | GET /trades/status=401 duration=0.002091465998091735
+2026-06-08 15:31:55 | INFO | app.main | Request started | GET /trades/
+2026-06-08 15:31:55 | WARNING | app.auth | Invalid API key attempt | key=wrong-....
+2026-06-08 15:31:55 | INFO | app.main | request Completed | GET /trades/status=403 duration=0.002453729000990279
+2026-06-08 15:32:01 | INFO | app.main | Created all DB Tables
+2026-06-08 15:32:10 | INFO | app.main | Created all DB Tables
+2026-06-08 15:32:25 | INFO | app.main | Created all DB Tables
+2026-06-08 15:32:32 | INFO | app.main | Created all DB Tables
+2026-06-08 15:32:35 | INFO | app.main | Created all DB Tables
+2026-06-08 15:32:38 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:32:38 | INFO | app.services | Creating Trade| symbol= AAPL, qty=10, price=150.0
+2026-06-08 15:32:38 | INFO | app.repositories | Created a new trade in the DB | id=1
+2026-06-08 15:32:38 | INFO | app.services | Trade created Successfully | id=1
+2026-06-08 15:32:38 | INFO | app.main | request Completed | POST /trades/status=201 duration=0.024586139003076823
+2026-06-08 15:32:39 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:32:39 | WARNING | app.main | Validation Error | POST /trades/ | [{'type': 'value_error', 'loc': ['body', 'symbol'], 'msg': 'Value error, symbol must only contain letter', 'input': 'AAPL123', 'ctx': {'error': {}}, 'url': 'https://errors.pydantic.dev/2.13/v/value_error'}]
+2026-06-08 15:32:39 | INFO | app.main | request Completed | POST /trades/status=422 duration=0.005215060002228711
+2026-06-08 15:32:39 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:32:39 | WARNING | app.main | Validation Error | POST /trades/ | [{'type': 'value_error', 'loc': ['body', 'quantity'], 'msg': 'Value error, quantity must be positive', 'input': -5, 'ctx': {'error': {}}, 'url': 'https://errors.pydantic.dev/2.13/v/value_error'}]
+2026-06-08 15:32:39 | INFO | app.main | request Completed | POST /trades/status=422 duration=0.004725439001049381
+2026-06-08 15:32:39 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:32:39 | WARNING | app.main | Validation Error | POST /trades/ | [{'type': 'value_error', 'loc': ['body', 'price'], 'msg': 'Value error, price must be positive', 'input': 0, 'ctx': {'error': {}}, 'url': 'https://errors.pydantic.dev/2.13/v/value_error'}]
+2026-06-08 15:32:39 | INFO | app.main | request Completed | POST /trades/status=422 duration=0.00501843399979407
+2026-06-08 15:32:39 | INFO | app.main | Request started | GET /trades/
+2026-06-08 15:32:39 | INFO | app.main | request Completed | GET /trades/status=200 duration=0.01035738899736316
+2026-06-08 15:32:39 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:32:39 | INFO | app.services | Creating Trade| symbol= AAPL, qty=10, price=150.0
+2026-06-08 15:32:39 | INFO | app.repositories | Created a new trade in the DB | id=1
+2026-06-08 15:32:39 | INFO | app.services | Trade created Successfully | id=1
+2026-06-08 15:32:39 | INFO | app.main | request Completed | POST /trades/status=201 duration=0.023764618999848608
+2026-06-08 15:32:39 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:32:39 | INFO | app.services | Creating Trade| symbol= GOOG, qty=5, price=200.0
+2026-06-08 15:32:39 | INFO | app.repositories | Created a new trade in the DB | id=2
+2026-06-08 15:32:39 | INFO | app.services | Trade created Successfully | id=2
+2026-06-08 15:32:39 | INFO | app.main | request Completed | POST /trades/status=201 duration=0.018385902003501542
+2026-06-08 15:32:39 | INFO | app.main | Request started | GET /trades/
+2026-06-08 15:32:39 | INFO | app.main | request Completed | GET /trades/status=200 duration=0.005620507999992697
+2026-06-08 15:32:39 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:32:39 | INFO | app.services | Creating Trade| symbol= AAPL, qty=10, price=150.0
+2026-06-08 15:32:39 | INFO | app.repositories | Created a new trade in the DB | id=1
+2026-06-08 15:32:39 | INFO | app.services | Trade created Successfully | id=1
+2026-06-08 15:32:39 | INFO | app.main | request Completed | POST /trades/status=201 duration=0.022939314003451727
+2026-06-08 15:32:39 | INFO | app.main | Request started | GET /trades/1
+2026-06-08 15:32:39 | INFO | app.main | request Completed | GET /trades/1status=200 duration=0.008662624000862706
+2026-06-08 15:32:39 | INFO | app.main | Request started | GET /trades/999
+2026-06-08 15:32:39 | WARNING | app.services | trade does not exist | id=999
+2026-06-08 15:32:39 | INFO | app.main | request Completed | GET /trades/999status=404 duration=0.007346523998421617
+2026-06-08 15:32:39 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:32:39 | INFO | app.services | Creating Trade| symbol= AAPL, qty=10, price=150.0
+2026-06-08 15:32:39 | INFO | app.repositories | Created a new trade in the DB | id=1
+2026-06-08 15:32:39 | INFO | app.services | Trade created Successfully | id=1
+2026-06-08 15:32:39 | INFO | app.main | request Completed | POST /trades/status=201 duration=0.01938837299894658
+2026-06-08 15:32:39 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:32:39 | INFO | app.services | Creating Trade| symbol= GOOG, qty=5, price=200.0
+2026-06-08 15:32:39 | INFO | app.repositories | Created a new trade in the DB | id=2
+2026-06-08 15:32:39 | INFO | app.services | Trade created Successfully | id=2
+2026-06-08 15:32:39 | INFO | app.main | request Completed | POST /trades/status=201 duration=0.016793066999525763
+2026-06-08 15:32:39 | INFO | app.main | Request started | GET /trades/AAPL
+2026-06-08 15:32:39 | WARNING | app.main | Validation Error | GET /trades/AAPL | [{'type': 'int_parsing', 'loc': ['path', 'trade_id'], 'msg': 'Input should be a valid integer, unable to parse string as an integer', 'input': 'AAPL', 'url': 'https://errors.pydantic.dev/2.13/v/int_parsing'}]
+2026-06-08 15:32:39 | INFO | app.main | request Completed | GET /trades/AAPLstatus=422 duration=0.0019807809985650238
+2026-06-08 15:32:39 | INFO | app.main | Request started | GET /trades/
+2026-06-08 15:32:39 | INFO | app.main | request Completed | GET /trades/status=200 duration=0.009247100999346003
+2026-06-08 15:32:39 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:32:39 | INFO | app.services | Creating Trade| symbol= AAPL, qty=10, price=150.0
+2026-06-08 15:32:39 | INFO | app.repositories | Created a new trade in the DB | id=1
+2026-06-08 15:32:39 | INFO | app.services | Trade created Successfully | id=1
+2026-06-08 15:32:39 | INFO | app.main | request Completed | POST /trades/status=201 duration=0.02302499800134683
+2026-06-08 15:32:39 | INFO | app.main | Request started | PATCH /trades/1/cancel
+2026-06-08 15:32:39 | INFO | app.services | Cancelling Trade | id=1
+2026-06-08 15:32:39 | INFO | app.services | Trade successfully Cancelled | id=1
+2026-06-08 15:32:39 | INFO | app.main | request Completed | PATCH /trades/1/cancelstatus=200 duration=0.020109458000661107
+2026-06-08 15:32:39 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:32:39 | INFO | app.services | Creating Trade| symbol= AAPL, qty=10, price=150.0
+2026-06-08 15:32:39 | INFO | app.repositories | Created a new trade in the DB | id=1
+2026-06-08 15:32:39 | INFO | app.services | Trade created Successfully | id=1
+2026-06-08 15:32:39 | INFO | app.main | request Completed | POST /trades/status=201 duration=0.02209030099766096
+2026-06-08 15:32:39 | INFO | app.main | Request started | PATCH /trades/1/cancel
+2026-06-08 15:32:39 | INFO | app.services | Cancelling Trade | id=1
+2026-06-08 15:32:39 | INFO | app.services | Trade successfully Cancelled | id=1
+2026-06-08 15:32:39 | INFO | app.main | request Completed | PATCH /trades/1/cancelstatus=200 duration=0.01757526200162829
+2026-06-08 15:32:39 | INFO | app.main | Request started | PATCH /trades/1/cancel
+2026-06-08 15:32:39 | INFO | app.services | Cancelling Trade | id=1
+2026-06-08 15:32:39 | WARNING | app.services | trade already cancelled | id=1
+2026-06-08 15:32:39 | INFO | app.main | request Completed | PATCH /trades/1/cancelstatus=400 duration=0.007946932000777451
+2026-06-08 15:32:39 | INFO | app.main | Request started | PATCH /trades/999/cancel
+2026-06-08 15:32:39 | INFO | app.services | Cancelling Trade | id=999
+2026-06-08 15:32:39 | WARNING | app.services | trade does not exist | id=999
+2026-06-08 15:32:39 | INFO | app.main | request Completed | PATCH /trades/999/cancelstatus=404 duration=0.007759076997899683
+2026-06-08 15:32:39 | INFO | app.main | Request started | GET /trades/
+2026-06-08 15:32:39 | WARNING | app.auth | request missing APi key
+2026-06-08 15:32:39 | INFO | app.main | request Completed | GET /trades/status=401 duration=0.003125548999378225
+2026-06-08 15:32:39 | INFO | app.main | Request started | GET /trades/
+2026-06-08 15:32:39 | WARNING | app.auth | Invalid API key attempt | key=wrong-....
+2026-06-08 15:32:39 | INFO | app.main | request Completed | GET /trades/status=403 duration=0.0031163799976638984
+2026-06-08 15:34:16 | INFO | app.main | Created all DB Tables
+2026-06-08 15:34:24 | INFO | app.main | Created all DB Tables
+2026-06-08 15:34:26 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:34:26 | INFO | app.services | Creating Trade| symbol= AAPL, qty=10, price=150.0
+2026-06-08 15:34:26 | INFO | app.repositories | Created a new trade in the DB | id=1
+2026-06-08 15:34:26 | INFO | app.services | Trade created Successfully | id=1
+2026-06-08 15:34:26 | INFO | app.main | request Completed | POST /trades/status=201 duration=0.026151396999921417
+2026-06-08 15:34:26 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:34:26 | WARNING | app.main | Validation Error | POST /trades/ | [{'type': 'value_error', 'loc': ['body', 'symbol'], 'msg': 'Value error, symbol must only contain letter', 'input': 'AAPL123', 'ctx': {'error': {}}, 'url': 'https://errors.pydantic.dev/2.13/v/value_error'}]
+2026-06-08 15:34:26 | INFO | app.main | request Completed | POST /trades/status=422 duration=0.004434311998920748
+2026-06-08 15:34:26 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:34:26 | WARNING | app.main | Validation Error | POST /trades/ | [{'type': 'value_error', 'loc': ['body', 'quantity'], 'msg': 'Value error, quantity must be positive', 'input': -5, 'ctx': {'error': {}}, 'url': 'https://errors.pydantic.dev/2.13/v/value_error'}]
+2026-06-08 15:34:26 | INFO | app.main | request Completed | POST /trades/status=422 duration=0.005649891001667129
+2026-06-08 15:34:26 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:34:26 | WARNING | app.main | Validation Error | POST /trades/ | [{'type': 'value_error', 'loc': ['body', 'price'], 'msg': 'Value error, price must be positive', 'input': 0, 'ctx': {'error': {}}, 'url': 'https://errors.pydantic.dev/2.13/v/value_error'}]
+2026-06-08 15:34:26 | INFO | app.main | request Completed | POST /trades/status=422 duration=0.006310658998700092
+2026-06-08 15:34:26 | INFO | app.main | Request started | GET /trades/
+2026-06-08 15:34:26 | INFO | app.main | request Completed | GET /trades/status=200 duration=0.01565281199873425
+2026-06-08 15:34:26 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:34:26 | INFO | app.services | Creating Trade| symbol= AAPL, qty=10, price=150.0
+2026-06-08 15:34:26 | INFO | app.repositories | Created a new trade in the DB | id=1
+2026-06-08 15:34:26 | INFO | app.services | Trade created Successfully | id=1
+2026-06-08 15:34:26 | INFO | app.main | request Completed | POST /trades/status=201 duration=0.019399831999180606
+2026-06-08 15:34:26 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:34:26 | INFO | app.services | Creating Trade| symbol= GOOG, qty=5, price=200.0
+2026-06-08 15:34:26 | INFO | app.repositories | Created a new trade in the DB | id=2
+2026-06-08 15:34:26 | INFO | app.services | Trade created Successfully | id=2
+2026-06-08 15:34:26 | INFO | app.main | request Completed | POST /trades/status=201 duration=0.017034054999385262
+2026-06-08 15:34:26 | INFO | app.main | Request started | GET /trades/
+2026-06-08 15:34:26 | INFO | app.main | request Completed | GET /trades/status=200 duration=0.006555713000125252
+2026-06-08 15:34:26 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:34:26 | INFO | app.services | Creating Trade| symbol= AAPL, qty=10, price=150.0
+2026-06-08 15:34:26 | INFO | app.repositories | Created a new trade in the DB | id=1
+2026-06-08 15:34:26 | INFO | app.services | Trade created Successfully | id=1
+2026-06-08 15:34:26 | INFO | app.main | request Completed | POST /trades/status=201 duration=0.01764321100199595
+2026-06-08 15:34:26 | INFO | app.main | Request started | GET /trades/1
+2026-06-08 15:34:26 | INFO | app.main | request Completed | GET /trades/1status=200 duration=0.011934922000364168
+2026-06-08 15:34:26 | INFO | app.main | Request started | GET /trades/999
+2026-06-08 15:34:26 | WARNING | app.services | trade does not exist | id=999
+2026-06-08 15:34:26 | INFO | app.main | request Completed | GET /trades/999status=404 duration=0.009331413002655609
+2026-06-08 15:34:26 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:34:26 | INFO | app.services | Creating Trade| symbol= AAPL, qty=10, price=150.0
+2026-06-08 15:34:26 | INFO | app.repositories | Created a new trade in the DB | id=1
+2026-06-08 15:34:26 | INFO | app.services | Trade created Successfully | id=1
+2026-06-08 15:34:26 | INFO | app.main | request Completed | POST /trades/status=201 duration=0.0228735519995098
+2026-06-08 15:34:26 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:34:26 | INFO | app.services | Creating Trade| symbol= GOOG, qty=5, price=200.0
+2026-06-08 15:34:26 | INFO | app.repositories | Created a new trade in the DB | id=2
+2026-06-08 15:34:26 | INFO | app.services | Trade created Successfully | id=2
+2026-06-08 15:34:26 | INFO | app.main | request Completed | POST /trades/status=201 duration=0.02033901499817148
+2026-06-08 15:34:26 | INFO | app.main | Request started | GET /trades/symbol/AAPL
+2026-06-08 15:34:26 | INFO | app.main | request Completed | GET /trades/symbol/AAPLstatus=200 duration=0.008661165000376059
+2026-06-08 15:34:26 | INFO | app.main | Request started | GET /trades/
+2026-06-08 15:34:26 | INFO | app.main | request Completed | GET /trades/status=200 duration=0.008998588000395102
+2026-06-08 15:34:26 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:34:26 | INFO | app.services | Creating Trade| symbol= AAPL, qty=10, price=150.0
+2026-06-08 15:34:26 | INFO | app.repositories | Created a new trade in the DB | id=1
+2026-06-08 15:34:26 | INFO | app.services | Trade created Successfully | id=1
+2026-06-08 15:34:26 | INFO | app.main | request Completed | POST /trades/status=201 duration=0.028515489997516852
+2026-06-08 15:34:26 | INFO | app.main | Request started | PATCH /trades/1/cancel
+2026-06-08 15:34:26 | INFO | app.services | Cancelling Trade | id=1
+2026-06-08 15:34:26 | INFO | app.services | Trade successfully Cancelled | id=1
+2026-06-08 15:34:26 | INFO | app.main | request Completed | PATCH /trades/1/cancelstatus=200 duration=0.03822649300127523
+2026-06-08 15:34:26 | INFO | app.main | Request started | POST /trades/
+2026-06-08 15:34:26 | INFO | app.services | Creating Trade| symbol= AAPL, qty=10, price=150.0
+2026-06-08 15:34:26 | INFO | app.repositories | Created a new trade in the DB | id=1
+2026-06-08 15:34:26 | INFO | app.services | Trade created Successfully | id=1
+2026-06-08 15:34:26 | INFO | app.main | request Completed | POST /trades/status=201 duration=0.025565758998709498
+2026-06-08 15:34:26 | INFO | app.main | Request started | PATCH /trades/1/cancel
+2026-06-08 15:34:26 | INFO | app.services | Cancelling Trade | id=1
+2026-06-08 15:34:26 | INFO | app.services | Trade successfully Cancelled | id=1
+2026-06-08 15:34:26 | INFO | app.main | request Completed | PATCH /trades/1/cancelstatus=200 duration=0.01923549599814578
+2026-06-08 15:34:26 | INFO | app.main | Request started | PATCH /trades/1/cancel
+2026-06-08 15:34:26 | INFO | app.services | Cancelling Trade | id=1
+2026-06-08 15:34:26 | WARNING | app.services | trade already cancelled | id=1
+2026-06-08 15:34:26 | INFO | app.main | request Completed | PATCH /trades/1/cancelstatus=400 duration=0.005661274000885896
+2026-06-08 15:34:26 | INFO | app.main | Request started | PATCH /trades/999/cancel
+2026-06-08 15:34:26 | INFO | app.services | Cancelling Trade | id=999
+2026-06-08 15:34:26 | WARNING | app.services | trade does not exist | id=999
+2026-06-08 15:34:26 | INFO | app.main | request Completed | PATCH /trades/999/cancelstatus=404 duration=0.015990343999874312
+2026-06-08 15:34:27 | INFO | app.main | Request started | GET /trades/
+2026-06-08 15:34:27 | WARNING | app.auth | request missing APi key
+2026-06-08 15:34:27 | INFO | app.main | request Completed | GET /trades/status=401 duration=0.0023280099994735792
+2026-06-08 15:34:27 | INFO | app.main | Request started | GET /trades/
+2026-06-08 15:34:27 | WARNING | app.auth | Invalid API key attempt | key=wrong-....
+2026-06-08 15:34:27 | INFO | app.main | request Completed | GET /trades/status=403 duration=0.0026853089984797407

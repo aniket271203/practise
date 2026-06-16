@@ -1,0 +1,158 @@
+ 2026-06-09 13:27:41 | INFO | app.main | Handling Request | GET /docs
+ 2026-06-09 13:27:41 | INFO | app.main | Completed Request | GET /docsstatus=200 duration=0.0014580440038116649
+ 2026-06-09 13:27:42 | INFO | app.main | Handling Request | GET /openapi.json
+ 2026-06-09 13:27:42 | INFO | app.main | Completed Request | GET /openapi.jsonstatus=200 duration=0.0016725099994800985
+ 2026-06-09 13:28:04 | INFO | app.main | Handling Request | GET /docs
+ 2026-06-09 13:28:04 | INFO | app.main | Completed Request | GET /docsstatus=200 duration=0.002243098999315407
+ 2026-06-09 13:28:04 | INFO | app.main | Handling Request | GET /openapi.json
+ 2026-06-09 13:28:04 | INFO | app.main | Completed Request | GET /openapi.jsonstatus=200 duration=0.011324806997436099
+ 2026-06-09 13:28:56 | INFO | app.main | Handling Request | GET /trades/
+ 2026-06-09 13:28:56 | INFO | app.main | Completed Request | GET /trades/status=200 duration=0.002859423002519179
+ 2026-06-09 13:29:33 | INFO | app.main | Handling Request | POST /trades/
+ 2026-06-09 13:29:33 | WARNING | app.main | Unexpected error | request=/trades/ error=3 validation errors:
+  {'type': 'missing', 'loc': ('response', 'side'), 'msg': 'Field required', 'input': {'id': 1, 'symbol': 'AAPL', 'quantity': 10, 'price': 150.0, 'status': <TradeStatus.PENDING: 'pending'>}, 'url': 'https://errors.pydantic.dev/2.13/v/missing'}
+  {'type': 'missing', 'loc': ('response', 'exchange'), 'msg': 'Field required', 'input': {'id': 1, 'symbol': 'AAPL', 'quantity': 10, 'price': 150.0, 'status': <TradeStatus.PENDING: 'pending'>}, 'url': 'https://errors.pydantic.dev/2.13/v/missing'}
+  {'type': 'missing', 'loc': ('response', 'trader_id'), 'msg': 'Field required', 'input': {'id': 1, 'symbol': 'AAPL', 'quantity': 10, 'price': 150.0, 'status': <TradeStatus.PENDING: 'pending'>}, 'url': 'https://errors.pydantic.dev/2.13/v/missing'}
+
+ 2026-06-09 13:30:18 | INFO | app.main | Handling Request | POST /trades/
+ 2026-06-09 13:30:18 | WARNING | app.main | Unexpected error | request=/trades/ error=2 validation errors:
+  {'type': 'missing', 'loc': ('response', 'side'), 'msg': 'Field required', 'input': {'id': 1, 'symbol': 'AAPL', 'quantity': 10, 'price': 150.0, 'status': <TradeStatus.PENDING: 'pending'>}, 'url': 'https://errors.pydantic.dev/2.13/v/missing'}
+  {'type': 'missing', 'loc': ('response', 'exchange'), 'msg': 'Field required', 'input': {'id': 1, 'symbol': 'AAPL', 'quantity': 10, 'price': 150.0, 'status': <TradeStatus.PENDING: 'pending'>}, 'url': 'https://errors.pydantic.dev/2.13/v/missing'}
+
+ 2026-06-09 13:31:25 | INFO | app.main | Handling Request | POST /trades/
+ 2026-06-09 13:31:25 | WARNING | app.main | Unexpected error | request=/trades/ error=1 validation errors:
+  {'type': 'missing', 'loc': ('response', 'side'), 'msg': 'Field required', 'input': {'id': 1, 'symbol': 'AAPL', 'quantity': 10, 'price': 150.0, 'status': <TradeStatus.PENDING: 'pending'>, 'exchange': <TradeExchange.NSE: 'nse'>}, 'url': 'https://errors.pydantic.dev/2.13/v/missing'}
+
+ 2026-06-09 13:31:44 | INFO | app.main | Handling Request | POST /trades/
+ 2026-06-09 13:31:44 | INFO | app.main | Completed Request | POST /trades/status=201 duration=0.0017729519968270324
+ 2026-06-09 13:31:52 | INFO | app.main | Handling Request | GET /trades/
+ 2026-06-09 13:31:52 | WARNING | app.main | Unexpected error | request=/trades/ error=1 validation errors:
+  {'type': 'model_attributes_type', 'loc': ('response', 0), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': 1, 'url': 'https://errors.pydantic.dev/2.13/v/model_attributes_type'}
+
+ 2026-06-09 13:32:36 | INFO | app.main | Handling Request | GET /trades/
+ 2026-06-09 13:32:36 | INFO | app.main | Completed Request | GET /trades/status=200 duration=0.0014712490010424517
+ 2026-06-09 13:33:07 | INFO | app.main | Handling Request | POST /trades/
+ 2026-06-09 13:33:07 | INFO | app.main | Completed Request | POST /trades/status=201 duration=0.0012891040023532696
+ 2026-06-09 13:33:12 | INFO | app.main | Handling Request | GET /trades/
+ 2026-06-09 13:33:12 | INFO | app.main | Completed Request | GET /trades/status=200 duration=0.0008531109997420572
+ 2026-06-09 15:44:24 | INFO | app.main | Handling Request | GET /docs
+ 2026-06-09 15:44:24 | INFO | app.main | Completed Request | GET /docsstatus=200 duration=0.0016849829989951104
+ 2026-06-09 15:44:24 | INFO | app.main | Handling Request | GET /openapi.json
+ 2026-06-09 15:44:24 | INFO | app.main | Completed Request | GET /openapi.jsonstatus=200 duration=0.006521675000840332
+ 2026-06-09 15:44:36 | INFO | app.main | Handling Request | GET /trader/
+ 2026-06-09 15:44:36 | WARNING | app.main | Unexpected error | request=/trader/ error=__aenter__
+ 2026-06-09 15:45:50 | INFO | app.main | Handling Request | GET /trader/
+ 2026-06-09 15:45:50 | INFO | app.main | Completed Request | GET /trader/status=200 duration=0.006798350004828535
+ 2026-06-09 15:46:20 | INFO | app.main | Handling Request | POST /trader/
+ 2026-06-09 15:46:20 | WARNING | app.main | Validation error | request=/trader/ error=[{'type': 'value_error', 'loc': ['body', 'email'], 'msg': 'Value error, The domain name students.iit.ac.in does not exist.', 'input': 'aniket.gupta@students.iit.ac.in', 'ctx': {'error': {}}, 'url': 'https://errors.pydantic.dev/2.13/v/value_error'}]
+ 2026-06-09 15:46:20 | INFO | app.main | Completed Request | POST /trader/status=429 duration=0.1451410459994804
+ 2026-06-09 15:47:15 | INFO | app.main | Handling Request | POST /trader/
+ 2026-06-09 15:47:15 | WARNING | app.main | Validation error | request=/trader/ error=[{'type': 'value_error', 'loc': ['body', 'email'], 'msg': 'Value error, The domain name students.iit.ac.in does not exist.', 'input': 'aniket.gupta@students.iit.ac.in', 'ctx': {'error': {}}, 'url': 'https://errors.pydantic.dev/2.13/v/value_error'}]
+ 2026-06-09 15:47:15 | INFO | app.main | Completed Request | POST /trader/status=429 duration=0.05594853399816202
+ 2026-06-09 15:47:37 | INFO | app.main | Handling Request | POST /trader/
+ 2026-06-09 15:47:38 | WARNING | app.main | Validation error | request=/trader/ error=[{'type': 'value_error', 'loc': ['body', 'email'], 'msg': 'Value error, The domain name students.iit.ac.in does not exist.', 'input': 'aniket.gupta@students.iit.ac.in', 'ctx': {'error': {}}, 'url': 'https://errors.pydantic.dev/2.13/v/value_error'}]
+ 2026-06-09 15:47:38 | INFO | app.main | Completed Request | POST /trader/status=422 duration=0.1436844440031564
+ 2026-06-09 15:47:58 | INFO | app.main | Handling Request | POST /trader/
+ 2026-06-09 15:47:59 | WARNING | app.main | Unexpected error | request=/trader/ error=object TraderServices can't be used in 'await' expression
+ 2026-06-09 15:48:45 | INFO | app.main | Handling Request | POST /trader/
+ 2026-06-09 15:48:45 | INFO | app.services.traders | Creating a Trader
+ 2026-06-09 15:48:45 | INFO | app.repositories.trader_repository | created new Trader in DB
+ 2026-06-09 15:48:45 | INFO | app.services.traders | sucessfully created trader | id=1
+ 2026-06-09 15:48:45 | INFO | app.main | Completed Request | POST /trader/status=201 duration=0.6519802149996394
+ 2026-06-09 15:49:17 | INFO | app.main | Handling Request | POST /trader/
+ 2026-06-09 15:49:22 | WARNING | app.main | Validation error | request=/trader/ error=[{'type': 'enum', 'loc': ['body', 'desk'], 'msg': "Input should be 'equity', 'derivatives' or 'crypto'", 'input': 'abs', 'ctx': {'expected': "'equity', 'derivatives' or 'crypto'"}, 'url': 'https://errors.pydantic.dev/2.13/v/enum'}]
+ 2026-06-09 15:49:22 | INFO | app.main | Completed Request | POST /trader/status=422 duration=5.201739638003346
+ 2026-06-09 15:49:36 | INFO | app.main | Handling Request | POST /trader/
+ 2026-06-09 15:49:36 | INFO | app.services.traders | Creating a Trader
+ 2026-06-09 15:49:36 | INFO | app.repositories.trader_repository | created new Trader in DB
+ 2026-06-09 15:49:36 | INFO | app.services.traders | sucessfully created trader | id=2
+ 2026-06-09 15:49:36 | INFO | app.main | Completed Request | POST /trader/status=201 duration=0.009663123004429508
+ 2026-06-09 15:49:51 | INFO | app.main | Handling Request | GET /trader/
+ 2026-06-09 15:49:51 | INFO | app.main | Completed Request | GET /trader/status=200 duration=0.0034233139958814718
+ 2026-06-09 15:49:59 | INFO | app.main | Handling Request | GET /trader/1
+ 2026-06-09 15:49:59 | INFO | app.main | Completed Request | GET /trader/1status=200 duration=0.0034699269963311963
+ 2026-06-09 15:50:04 | INFO | app.main | Handling Request | GET /trader/2
+ 2026-06-09 15:50:04 | INFO | app.main | Completed Request | GET /trader/2status=200 duration=0.002937974000815302
+ 2026-06-09 15:50:07 | INFO | app.main | Handling Request | GET /trader/3
+ 2026-06-09 15:50:07 | WARNING | app.services.traders | trader deos not exist
+ 2026-06-09 15:50:07 | INFO | app.main | Completed Request | GET /trader/3status=404 duration=0.0029116510049789213
+ 2026-06-09 15:50:16 | INFO | app.main | Handling Request | DELETE /trader/1
+ 2026-06-09 15:50:16 | INFO | app.services.traders | deleting Trader | id=1
+ 2026-06-09 15:50:16 | INFO | app.main | Completed Request | DELETE /trader/1status=200 duration=0.011107888996775728
+ 2026-06-09 15:50:25 | INFO | app.main | Handling Request | GET /trader/1
+ 2026-06-09 15:50:25 | INFO | app.main | Completed Request | GET /trader/1status=200 duration=0.0029511000029742718
+ 2026-06-09 15:51:05 | INFO | app.main | Handling Request | GET /trades/
+ 2026-06-09 15:51:05 | INFO | app.main | Completed Request | GET /trades/status=200 duration=0.004202408003038727
+ 2026-06-09 15:51:38 | INFO | app.main | Handling Request | POST /trades/
+ 2026-06-09 15:51:38 | INFO | app.services.trades | Creating Trade
+ 2026-06-09 15:51:38 | WARNING | app.services.trades | Trader is not active
+ 2026-06-09 15:51:38 | INFO | app.main | Completed Request | POST /trades/status=400 duration=0.003789340000366792
+ 2026-06-09 15:51:46 | INFO | app.main | Handling Request | POST /trades/
+ 2026-06-09 15:51:46 | INFO | app.services.trades | Creating Trade
+ 2026-06-09 15:51:46 | WARNING | app.main | Unexpected error | request=/trades/ error=(sqlite3.IntegrityError) NOT NULL constraint failed: trades.trader_id
+[SQL: INSERT INTO trades (symbol, quantity, price, side, status, exchange, trader_id, created_at) VALUES (?, ?, ?, ?, ?, ?, ?, CURRENT_TIMESTAMP) RETURNING id, created_at, updated_at]
+[parameters: ('AAPL', 10, 100.0, 'buy', <TradeStatus.PENDING: 'pending'>, <TradeExchange.NSE: 'nse'>, None)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+ 2026-06-09 15:54:27 | INFO | app.main | Handling Request | POST /trades/
+ 2026-06-09 15:54:27 | INFO | app.services.trades | Creating Trade
+ 2026-06-09 15:54:27 | INFO | app.repositories.trade_repository | created new Trade in DB
+ 2026-06-09 15:54:27 | INFO | app.services.trades | Created a trade | id=1
+ 2026-06-09 15:54:27 | INFO | app.main | Completed Request | POST /trades/status=201 duration=0.01779520499985665
+ 2026-06-09 15:54:43 | INFO | app.main | Handling Request | GET /trades/
+ 2026-06-09 15:54:43 | INFO | app.main | Completed Request | GET /trades/status=200 duration=0.0034415169939165935
+ 2026-06-09 15:54:48 | INFO | app.main | Handling Request | GET /trades/
+ 2026-06-09 15:54:48 | INFO | app.main | Completed Request | GET /trades/status=200 duration=0.002545201998145785
+ 2026-06-09 15:55:16 | INFO | app.main | Handling Request | GET /trader/
+ 2026-06-09 15:55:16 | INFO | app.main | Completed Request | GET /trader/status=200 duration=0.003496095996524673
+ 2026-06-09 15:55:31 | INFO | app.main | Handling Request | GET /trades/{trades_id}
+ 2026-06-09 15:55:31 | INFO | app.main | Completed Request | GET /trades/{trades_id}status=200 duration=0.0032509619995835237
+ 2026-06-09 15:55:48 | INFO | app.main | Handling Request | GET /trades/
+ 2026-06-09 15:55:48 | INFO | app.main | Completed Request | GET /trades/status=200 duration=0.006493332002719399
+ 2026-06-09 15:56:17 | INFO | app.main | Handling Request | POST /trades/
+ 2026-06-09 15:56:17 | INFO | app.services.trades | Creating Trade
+ 2026-06-09 15:56:17 | INFO | app.repositories.trade_repository | created new Trade in DB
+ 2026-06-09 15:56:17 | INFO | app.services.trades | Created a trade | id=2
+ 2026-06-09 15:56:17 | INFO | app.main | Completed Request | POST /trades/status=201 duration=0.015391849003208335
+ 2026-06-09 15:56:22 | INFO | app.main | Handling Request | GET /trades/
+ 2026-06-09 15:56:22 | INFO | app.main | Completed Request | GET /trades/status=200 duration=0.0033922879956662655
+ 2026-06-09 15:56:32 | INFO | app.main | Handling Request | GET /trades/{trades_id}
+ 2026-06-09 15:56:32 | INFO | app.main | Completed Request | GET /trades/{trades_id}status=200 duration=0.00409826599934604
+ 2026-06-09 15:56:36 | INFO | app.main | Handling Request | PATCH /trades/1/fill
+ 2026-06-09 15:56:36 | INFO | app.services.trades | Updating status | to=filled id=1
+ 2026-06-09 15:56:36 | INFO | app.main | Completed Request | PATCH /trades/1/fillstatus=200 duration=0.013151499995728955
+ 2026-06-09 15:56:39 | INFO | app.main | Handling Request | GET /trades/{trades_id}
+ 2026-06-09 15:56:39 | INFO | app.main | Completed Request | GET /trades/{trades_id}status=200 duration=0.002669617999345064
+ 2026-06-09 15:56:45 | INFO | app.main | Handling Request | PATCH /trades/1/cancel
+ 2026-06-09 15:56:45 | INFO | app.services.trades | Updating status | to=cancelled id=1
+ 2026-06-09 15:56:45 | WARNING | app.services.trades | filled trade cannot be cancelled
+ 2026-06-09 15:56:45 | INFO | app.main | Completed Request | PATCH /trades/1/cancelstatus=400 duration=0.004020983004011214
+ 2026-06-09 15:56:52 | INFO | app.main | Handling Request | PATCH /trades/2/cancel
+ 2026-06-09 15:56:52 | INFO | app.services.trades | Updating status | to=cancelled id=2
+ 2026-06-09 15:56:52 | INFO | app.main | Completed Request | PATCH /trades/2/cancelstatus=200 duration=0.01056719199550571
+ 2026-06-09 15:56:58 | INFO | app.main | Handling Request | GET /trades/{trades_id}
+ 2026-06-09 15:56:58 | INFO | app.main | Completed Request | GET /trades/{trades_id}status=200 duration=0.0024979219961096533
+ 2026-06-09 15:57:02 | INFO | app.main | Handling Request | PATCH /trades/2/fill
+ 2026-06-09 15:57:02 | INFO | app.services.trades | Updating status | to=filled id=2
+ 2026-06-09 15:57:02 | WARNING | app.services.trades | cannot fill cancelled trade
+ 2026-06-09 15:57:02 | INFO | app.main | Completed Request | PATCH /trades/2/fillstatus=400 duration=0.004491011997743044
+ 2026-06-09 15:57:12 | INFO | app.main | Handling Request | GET /trades/trader/2
+ 2026-06-09 15:57:12 | WARNING | app.main | Unexpected error | request=/trades/trader/2 error=1 validation errors:
+  {'type': 'model_attributes_type', 'loc': ('response',), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': [Trade(id=1 symbol=AAPL status=filled), Trade(id=2 symbol=GOGL status=cancelled)], 'url': 'https://errors.pydantic.dev/2.13/v/model_attributes_type'}
+
+ 2026-06-09 16:00:45 | INFO | app.main | Handling Request | GET /trades/trader/2
+ 2026-06-09 16:00:45 | WARNING | app.main | Unexpected error | request=/trades/trader/2 error=1 validation errors:
+  {'type': 'model_attributes_type', 'loc': ('response',), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': [Trade(id=1 symbol=AAPL status=filled), Trade(id=2 symbol=GOGL status=cancelled)], 'url': 'https://errors.pydantic.dev/2.13/v/model_attributes_type'}
+
+ 2026-06-09 16:01:38 | INFO | app.main | Handling Request | GET /trades/trader/2
+ 2026-06-09 16:01:38 | WARNING | app.main | Unexpected error | request=/trades/trader/2 error=8 validation errors:
+  {'type': 'missing', 'loc': ('response', 0, 'name'), 'msg': 'Field required', 'input': Trade(id=1 symbol=AAPL status=filled), 'url': 'https://errors.pydantic.dev/2.13/v/missing'}
+  {'type': 'missing', 'loc': ('response', 0, 'email'), 'msg': 'Field required', 'input': Trade(id=1 symbol=AAPL status=filled), 'url': 'https://errors.pydantic.dev/2.13/v/missing'}
+  {'type': 'missing', 'loc': ('response', 0, 'desk'), 'msg': 'Field required', 'input': Trade(id=1 symbol=AAPL status=filled), 'url': 'https://errors.pydantic.dev/2.13/v/missing'}
+  {'type': 'missing', 'loc': ('response', 0, 'is_active'), 'msg': 'Field required', 'input': Trade(id=1 symbol=AAPL status=filled), 'url': 'https://errors.pydantic.dev/2.13/v/missing'}
+  {'type': 'missing', 'loc': ('response', 1, 'name'), 'msg': 'Field required', 'input': Trade(id=2 symbol=GOGL status=cancelled), 'url': 'https://errors.pydantic.dev/2.13/v/missing'}
+  {'type': 'missing', 'loc': ('response', 1, 'email'), 'msg': 'Field required', 'input': Trade(id=2 symbol=GOGL status=cancelled), 'url': 'https://errors.pydantic.dev/2.13/v/missing'}
+  {'type': 'missing', 'loc': ('response', 1, 'desk'), 'msg': 'Field required', 'input': Trade(id=2 symbol=GOGL status=cancelled), 'url': 'https://errors.pydantic.dev/2.13/v/missing'}
+  {'type': 'missing', 'loc': ('response', 1, 'is_active'), 'msg': 'Field required', 'input': Trade(id=2 symbol=GOGL status=cancelled), 'url': 'https://errors.pydantic.dev/2.13/v/missing'}
+
+ 2026-06-09 16:01:58 | INFO | app.main | Handling Request | GET /trades/trader/2
+ 2026-06-09 16:01:58 | INFO | app.main | Completed Request | GET /trades/trader/2status=200 duration=0.00800980699568754

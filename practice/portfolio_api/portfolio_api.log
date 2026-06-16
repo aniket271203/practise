@@ -1,0 +1,98 @@
+ 2026-06-08 12:37:34 | INFO | app.main | handling Request | POST /portfolio/positions
+ 2026-06-08 12:37:34 | INFO | app.services | Creating Position | Symbol=AAPL
+ 2026-06-08 12:37:34 | WARNING | app.main | Unexpected error | POST /portfolio/positions| error=retry.<locals>.decorator() takes 1 positional argument but 3 were given
+ 2026-06-08 12:39:31 | INFO | app.main | handling Request | POST /portfolio/positions
+ 2026-06-08 12:39:31 | INFO | app.services | Creating Position | Symbol=AAPL
+ 2026-06-08 12:39:31 | WARNING | app.main | Unexpected error | POST /portfolio/positions| error=Position() takes no arguments
+ 2026-06-08 12:56:52 | INFO | app.main | handling Request | POST /portfolio/positions
+ 2026-06-08 12:56:52 | INFO | app.services | Creating Position | Symbol=AAPL
+ 2026-06-08 12:56:52 | INFO | app.services | created position Succesfully| symbol=AAPL id=1
+ 2026-06-08 12:56:52 | INFO | app.main | request completed | request=/portfolio/positions status_code=201 duration=0.03378413500104216
+ 2026-06-08 12:59:53 | INFO | app.main | handling Request | POST /portfolio/positions
+ 2026-06-08 12:59:53 | INFO | app.services | Creating Position | Symbol=AAPL
+ 2026-06-08 12:59:53 | INFO | app.main | request completed | request=/portfolio/positions status_code=400 duration=0.016948368000157643
+ 2026-06-08 13:00:15 | INFO | app.main | handling Request | POST /portfolio/positions
+ 2026-06-08 13:00:15 | WARNING | app.main | Validation error | POST /portfolio/positions| error=[{'type': 'value_error', 'loc': ('body', 'symbol'), 'msg': 'Value error, symbol must contain only letters', 'input': 'AAPl123', 'ctx': {'error': ValueError('symbol must contain only letters')}, 'url': 'https://errors.pydantic.dev/2.5/v/value_error'}, {'type': 'value_error', 'loc': ('body', 'quantity'), 'msg': 'Value error, quantity must be positive', 'input': -5, 'ctx': {'error': ValueError('quantity must be positive')}, 'url': 'https://errors.pydantic.dev/2.5/v/value_error'}]
+ 2026-06-08 13:00:15 | WARNING | app.main | Unexpected error | POST /portfolio/positions| error=Object of type ValueError is not JSON serializable
+ 2026-06-08 13:00:35 | INFO | app.main | handling Request | POST /portfolio/positions
+ 2026-06-08 13:00:35 | WARNING | app.main | Validation error | POST /portfolio/positions| error=[{'type': 'value_error', 'loc': ('body', 'quantity'), 'msg': 'Value error, quantity must be positive', 'input': -5, 'ctx': {'error': ValueError('quantity must be positive')}, 'url': 'https://errors.pydantic.dev/2.5/v/value_error'}]
+ 2026-06-08 13:00:35 | WARNING | app.main | Unexpected error | POST /portfolio/positions| error=Object of type ValueError is not JSON serializable
+ 2026-06-08 13:02:23 | INFO | app.main | handling Request | GET /portfolio/position
+ 2026-06-08 13:02:23 | WARNING | app.main | Unexpected error | GET /portfolio/position| error=1 validation errors:
+  {'type': 'model_attributes_type', 'loc': ('response',), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': [Position(id=1, symbol=AAPL)], 'url': 'https://errors.pydantic.dev/2.5/v/model_attributes_type'}
+
+ 2026-06-08 13:06:21 | INFO | app.main | handling Request | GET /portfolio/position
+ 2026-06-08 13:06:21 | WARNING | app.main | Unexpected error | GET /portfolio/position| error=1 validation errors:
+  {'type': 'model_attributes_type', 'loc': ('response',), 'msg': 'Input should be a valid dictionary or object to extract fields from', 'input': [Position(id=1, symbol=AAPL)], 'url': 'https://errors.pydantic.dev/2.5/v/model_attributes_type'}
+
+ 2026-06-08 13:08:50 | INFO | app.main | handling Request | GET /portfolio/position
+ 2026-06-08 13:08:50 | INFO | app.main | request completed | request=/portfolio/position status_code=200 duration=0.012852797000959981
+ 2026-06-08 13:09:10 | INFO | app.main | handling Request | GET /portfolio/positions/1
+ 2026-06-08 13:09:10 | INFO | app.main | request completed | request=/portfolio/positions/1 status_code=200 duration=0.007758394000120461
+ 2026-06-08 13:09:15 | INFO | app.main | handling Request | GET /portfolio/positions/21
+ 2026-06-08 13:09:15 | WARNING | app.services | No positions found for id=21
+ 2026-06-08 13:09:15 | INFO | app.main | request completed | request=/portfolio/positions/21 status_code=404 duration=0.005407206997915637
+ 2026-06-08 13:09:37 | INFO | app.main | handling Request | PATCH /portfolio/positions/1/update
+ 2026-06-08 13:09:37 | INFO | app.services | Updating position| id=1
+ 2026-06-08 13:09:37 | INFO | app.main | request completed | request=/portfolio/positions/1/update status_code=200 duration=0.021812595998198958
+ 2026-06-08 13:10:18 | INFO | app.main | handling Request | POST /portfolio/positions
+ 2026-06-08 13:10:18 | INFO | app.services | Creating Position | Symbol=GOOG
+ 2026-06-08 13:10:18 | WARNING | app.services | No positions found for symbol=GOOG
+ 2026-06-08 13:10:18 | INFO | app.main | request completed | request=/portfolio/positions status_code=404 duration=0.006188658997416496
+ 2026-06-08 13:11:32 | INFO | app.main | handling Request | GET /portfolio/position
+ 2026-06-08 13:11:32 | INFO | app.main | request completed | request=/portfolio/position status_code=200 duration=0.01429784499850939
+ 2026-06-08 13:11:52 | INFO | app.main | handling Request | PATCH /portfolio/positions/1/update
+ 2026-06-08 13:11:52 | INFO | app.services | Updating position| id=1
+ 2026-06-08 13:11:52 | INFO | app.main | request completed | request=/portfolio/positions/1/update status_code=200 duration=0.024460372002067743
+ 2026-06-08 13:12:02 | INFO | app.main | handling Request | POST /portfolio/positions
+ 2026-06-08 13:12:02 | INFO | app.services | Creating Position | Symbol=GOOG
+ 2026-06-08 13:12:02 | INFO | app.services | created position Succesfully| symbol=GOOG id=2
+ 2026-06-08 13:12:02 | INFO | app.main | request completed | request=/portfolio/positions status_code=201 duration=0.017061626000213437
+ 2026-06-08 13:12:07 | INFO | app.main | handling Request | GET /portfolio/position
+ 2026-06-08 13:12:07 | INFO | app.main | request completed | request=/portfolio/position status_code=200 duration=0.004154981001192937
+ 2026-06-08 13:12:16 | INFO | app.main | handling Request | GET /portfolio/positions/value/total
+ 2026-06-08 13:12:16 | INFO | app.main | request completed | request=/portfolio/positions/value/total status_code=200 duration=0.007233566000650171
+ 2026-06-08 13:12:38 | INFO | app.main | handling Request | DELETE /portfolio/positions/1
+ 2026-06-08 13:12:38 | INFO | app.services | Deleting Position from DB | id=1
+ 2026-06-08 13:12:38 | INFO | app.services | Successfully Deleted Position from DB | id=1
+ 2026-06-08 13:12:38 | INFO | app.main | request completed | request=/portfolio/positions/1 status_code=200 duration=0.015363389000413008
+ 2026-06-08 13:12:46 | INFO | app.main | handling Request | DELETE /portfolio/positions/1
+ 2026-06-08 13:12:46 | INFO | app.services | Deleting Position from DB | id=1
+ 2026-06-08 13:12:46 | WARNING | app.services | No positions found for id=1
+ 2026-06-08 13:12:46 | INFO | app.main | request completed | request=/portfolio/positions/1 status_code=404 duration=0.0038850220007589087
+ 2026-06-08 13:13:02 | INFO | app.main | handling Request | GET /portfolio/position
+ 2026-06-08 13:13:02 | INFO | app.main | request completed | request=/portfolio/position status_code=200 duration=0.004229321002640063
+ 2026-06-08 13:13:02 | INFO | app.main | handling Request | GET /portfolio/position
+ 2026-06-08 13:13:02 | INFO | app.main | request completed | request=/portfolio/position status_code=200 duration=0.004258006003510673
+ 2026-06-08 13:13:02 | INFO | app.main | handling Request | GET /portfolio/position
+ 2026-06-08 13:13:02 | INFO | app.main | request completed | request=/portfolio/position status_code=200 duration=0.006230669001524802
+ 2026-06-08 13:13:02 | INFO | app.main | handling Request | GET /portfolio/position
+ 2026-06-08 13:13:02 | INFO | app.main | request completed | request=/portfolio/position status_code=200 duration=0.004057083999214228
+ 2026-06-08 13:13:02 | INFO | app.main | handling Request | GET /portfolio/position
+ 2026-06-08 13:13:02 | INFO | app.main | request completed | request=/portfolio/position status_code=200 duration=0.003887335999024799
+ 2026-06-08 13:13:03 | INFO | app.main | handling Request | GET /portfolio/position
+ 2026-06-08 13:13:03 | INFO | app.main | request completed | request=/portfolio/position status_code=200 duration=0.004688097000325797
+ 2026-06-08 13:13:03 | INFO | app.main | handling Request | GET /portfolio/position
+ 2026-06-08 13:13:03 | INFO | app.main | request completed | request=/portfolio/position status_code=429 duration=0.0015377299969259184
+ 2026-06-08 13:13:03 | INFO | app.main | handling Request | GET /portfolio/position
+ 2026-06-08 13:13:03 | INFO | app.main | request completed | request=/portfolio/position status_code=429 duration=0.0010829409984580707
+ 2026-06-08 13:13:03 | INFO | app.main | handling Request | GET /portfolio/position
+ 2026-06-08 13:13:03 | INFO | app.main | request completed | request=/portfolio/position status_code=429 duration=0.001022335000016028
+ 2026-06-08 13:13:03 | INFO | app.main | handling Request | GET /portfolio/position
+ 2026-06-08 13:13:03 | INFO | app.main | request completed | request=/portfolio/position status_code=429 duration=0.003180298997904174
+ 2026-06-08 13:13:03 | INFO | app.main | handling Request | GET /portfolio/position
+ 2026-06-08 13:13:03 | INFO | app.main | request completed | request=/portfolio/position status_code=429 duration=0.001215236999996705
+ 2026-06-08 13:13:03 | INFO | app.main | handling Request | GET /portfolio/position
+ 2026-06-08 13:13:03 | INFO | app.main | request completed | request=/portfolio/position status_code=429 duration=0.0012610919984581415
+ 2026-06-08 13:13:04 | INFO | app.main | handling Request | GET /portfolio/position
+ 2026-06-08 13:13:04 | INFO | app.main | request completed | request=/portfolio/position status_code=429 duration=0.0010576049971859902
+ 2026-06-08 13:13:04 | INFO | app.main | handling Request | GET /portfolio/position
+ 2026-06-08 13:13:04 | INFO | app.main | request completed | request=/portfolio/position status_code=429 duration=0.001302972999837948
+ 2026-06-08 13:13:04 | INFO | app.main | handling Request | GET /portfolio/position
+ 2026-06-08 13:13:04 | INFO | app.main | request completed | request=/portfolio/position status_code=429 duration=0.0017830870019679423
+ 2026-06-08 13:16:15 | INFO | app.main | handling Request | POST /portfolio/positions
+ 2026-06-08 13:16:15 | WARNING | app.main | Validation error | POST /portfolio/positions| error=[{'type': 'value_error', 'loc': ['body', 'quantity'], 'msg': 'Value error, quantity must be positive', 'input': -5, 'ctx': {'error': {}}, 'url': 'https://errors.pydantic.dev/2.5/v/value_error'}]
+ 2026-06-08 13:16:15 | INFO | app.main | request completed | request=/portfolio/positions status_code=422 duration=0.04441110900006606
+ 2026-06-08 13:16:24 | INFO | app.main | handling Request | POST /portfolio/positions
+ 2026-06-08 13:16:24 | WARNING | app.main | Validation error | POST /portfolio/positions| error=[{'type': 'value_error', 'loc': ['body', 'symbol'], 'msg': 'Value error, symbol must contain only letters', 'input': 'GOOG12', 'ctx': {'error': {}}, 'url': 'https://errors.pydantic.dev/2.5/v/value_error'}, {'type': 'value_error', 'loc': ['body', 'quantity'], 'msg': 'Value error, quantity must be positive', 'input': -5, 'ctx': {'error': {}}, 'url': 'https://errors.pydantic.dev/2.5/v/value_error'}]
+ 2026-06-08 13:16:24 | INFO | app.main | request completed | request=/portfolio/positions status_code=422 duration=0.004162139997788472

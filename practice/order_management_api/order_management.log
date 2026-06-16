@@ -1,0 +1,63 @@
+ 2026-06-10 16:24:27 | INFO | app.main | Handling request | GET /docs
+ 2026-06-10 16:24:27 | INFO | app.main | Completed request | GET /docsstatus=200 duration=0.0008799070019449573
+ 2026-06-10 16:24:27 | INFO | app.main | Handling request | GET /openapi.json
+ 2026-06-10 16:24:27 | INFO | app.main | Completed request | GET /openapi.jsonstatus=200 duration=0.004272138998203445
+ 2026-06-10 16:37:43 | INFO | app.main | Handling request | GET /docs
+ 2026-06-10 16:37:43 | INFO | app.main | Completed request | GET /docsstatus=200 duration=0.0007409850004478358
+ 2026-06-10 16:37:43 | INFO | app.main | Handling request | GET /openapi.json
+ 2026-06-10 16:37:43 | INFO | app.main | Completed request | GET /openapi.jsonstatus=200 duration=0.006500493997009471
+ 2026-06-10 16:39:04 | INFO | app.main | Handling request | GET /docs
+ 2026-06-10 16:39:04 | INFO | app.main | Completed request | GET /docsstatus=200 duration=0.00036675899900728837
+ 2026-06-10 16:39:04 | INFO | app.main | Handling request | GET /openapi.json
+ 2026-06-10 16:39:04 | INFO | app.main | Completed request | GET /openapi.jsonstatus=200 duration=0.00639217099887901
+ 2026-06-10 16:53:55 | INFO | app.main | Handling request | GET /docs
+ 2026-06-10 16:53:55 | INFO | app.main | Completed request | GET /docsstatus=200 duration=0.0009063299985427875
+ 2026-06-10 16:53:55 | INFO | app.main | Handling request | GET /openapi.json
+ 2026-06-10 16:53:55 | INFO | app.main | Completed request | GET /openapi.jsonstatus=200 duration=0.006830325000919402
+ 2026-06-10 16:54:00 | INFO | app.main | Handling request | GET /products/
+ 2026-06-10 16:54:00 | WARNING | app.auth | Missing API Key
+ 2026-06-10 16:54:00 | INFO | app.main | Completed request | GET /products/status=401 duration=0.0007634569992660545
+ 2026-06-10 16:54:18 | INFO | app.main | Handling request | GET /products/
+ 2026-06-10 16:54:18 | INFO | app.main | Completed request | GET /products/status=200 duration=0.007293545000720769
+ 2026-06-10 16:54:34 | INFO | app.main | Handling request | POST /products/
+ 2026-06-10 16:54:34 | INFO | app.services.product | Creating a new product
+ 2026-06-10 16:54:34 | INFO | app.services.product | Product created in DB | id=1
+ 2026-06-10 16:54:34 | INFO | app.main | Completed request | POST /products/status=201 duration=0.014866133002215065
+ 2026-06-10 16:54:49 | INFO | app.main | Handling request | POST /products/
+ 2026-06-10 16:54:49 | INFO | app.services.product | Creating a new product
+ 2026-06-10 16:54:49 | INFO | app.services.product | Product created in DB | id=2
+ 2026-06-10 16:54:49 | INFO | app.main | Completed request | POST /products/status=201 duration=0.011342358997353585
+ 2026-06-10 16:54:52 | INFO | app.main | Handling request | GET /products/
+ 2026-06-10 16:54:52 | INFO | app.main | Completed request | GET /products/status=200 duration=0.002955667001515394
+ 2026-06-10 16:54:58 | INFO | app.main | Handling request | GET /products/1
+ 2026-06-10 16:54:58 | WARNING | app.services.product | Fetching Product | id=1
+ 2026-06-10 16:54:58 | INFO | app.main | Completed request | GET /products/1status=200 duration=0.004461346001335187
+ 2026-06-10 16:55:03 | INFO | app.main | Handling request | GET /products/2
+ 2026-06-10 16:55:03 | WARNING | app.services.product | Fetching Product | id=2
+ 2026-06-10 16:55:03 | INFO | app.main | Completed request | GET /products/2status=200 duration=0.0029517340008169413
+ 2026-06-10 16:56:45 | INFO | app.main | Handling request | GET /products/
+ 2026-06-10 16:56:45 | INFO | app.main | Completed request | GET /products/status=200 duration=0.005546566000703024
+ 2026-06-10 16:56:53 | INFO | app.main | Handling request | GET /products/2
+ 2026-06-10 16:56:53 | WARNING | app.services.product | Fetching Product | id=2
+ 2026-06-10 16:56:53 | INFO | app.main | Completed request | GET /products/2status=200 duration=0.004840444998990279
+ 2026-06-10 16:56:58 | INFO | app.main | Handling request | GET /products/12
+ 2026-06-10 16:56:58 | WARNING | app.services.product | Fetching Product | id=12
+ 2026-06-10 16:56:58 | WARNING | app.services.product | product does not exist | id=12
+ 2026-06-10 16:56:58 | INFO | app.main | Completed request | GET /products/12status=404 duration=0.0029424480017041788
+ 2026-06-10 16:58:01 | INFO | app.main | Handling request | GET /products/
+ 2026-06-10 16:58:01 | WARNING | app.auth | Missing API Key
+ 2026-06-10 16:58:01 | INFO | app.main | Completed request | GET /products/status=401 duration=0.0007791600000928156
+ 2026-06-10 16:58:08 | INFO | app.main | Handling request | GET /products/
+ 2026-06-10 16:58:08 | WARNING | app.auth | invalid API Key | key=123...
+ 2026-06-10 16:58:08 | INFO | app.main | Completed request | GET /products/status=403 duration=0.0006071079988032579
+ 2026-06-10 16:58:24 | INFO | app.main | Handling request | GET /products/
+ 2026-06-10 16:58:24 | INFO | app.main | Completed request | GET /products/status=200 duration=0.007448201002262067
+ 2026-06-10 18:13:19 | INFO | app.main | Handling request | GET /docs
+ 2026-06-10 18:13:19 | INFO | app.main | Completed request | GET /docsstatus=200 duration=0.000669403001666069
+ 2026-06-10 18:13:20 | INFO | app.main | Handling request | GET /openapi.json
+ 2026-06-10 18:13:20 | INFO | app.main | Completed request | GET /openapi.jsonstatus=200 duration=0.006136459000117611
+ 2026-06-10 18:13:35 | INFO | app.main | Handling request | GET /products/
+ 2026-06-10 18:13:35 | WARNING | app.auth | Missing API Key
+ 2026-06-10 18:13:35 | INFO | app.main | Completed request | GET /products/status=401 duration=0.0008667250003782101
+ 2026-06-10 18:13:52 | INFO | app.main | Handling request | GET /products/
+ 2026-06-10 18:13:52 | INFO | app.main | Completed request | GET /products/status=200 duration=0.00948061599774519
